@@ -8740,7 +8740,7 @@ var $author$project$Styles$styles = function () {
 				_List_fromArray(
 					[
 						$rtfeldman$elm_css$Css$Media$minWidth(
-						$rtfeldman$elm_css$Css$px(600))
+						$rtfeldman$elm_css$Css$px(900))
 					]))
 			]));
 	var codeStyle = _List_fromArray(
@@ -9051,20 +9051,6 @@ var $author$project$Page$layout = F2(
 			$author$project$Page$header,
 			_List_fromArray(
 				[
-					A2(
-					$elm$html$Html$div,
-					_List_fromArray(
-						[
-							$elm$html$Html$Attributes$class('sidebar')
-						]),
-					_List_Nil),
-					A2(
-					$elm$html$Html$div,
-					_List_fromArray(
-						[
-							$elm$html$Html$Attributes$class('sidebar2')
-						]),
-					_List_Nil),
 					A2(
 					$elm$html$Html$div,
 					_List_fromArray(

@@ -110,11 +110,11 @@ footer =
 layout : String -> List (Html Never) -> List (Html Never)
 layout title contentItems =
     header
-        ++ [ div [ class "sidebar" ]
-                []
-           , div [ class "sidebar2" ]
-                []
-           , div [ class "content" ]
+        -- ++ [ div [ class "sidebar" ]
+        --         []
+        --    , div [ class "sidebar2" ]
+        --         []
+           ++ [ div [ class "content" ]
                 ([ h1 [] [ text title ] ] ++ contentItems)
           -- , footer
            , Elmstatic.stylesheet "/styles.css"

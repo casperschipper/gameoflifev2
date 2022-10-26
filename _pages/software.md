@@ -1,6 +1,5 @@
 ---
 title: "Software"
-thumb: "img/logo.png"
 ---
 
 We created our own software, WFSCollider which is __free__ and open source ( [github](https://github.com/GameOfLife) ). It runs on all mayor platforms (Windows, MacOS, Linux). 
