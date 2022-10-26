@@ -1,6 +1,6 @@
 ---
 title: "Sonology WFS Festival 2022"
-tags: concert sonology
+tags: sonology
 thumb: "/img/logo.png"
 ---
 

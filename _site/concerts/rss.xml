@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Author&apos;s fancy blog/concerts</title>
+        <link>https://example.com/posts/concerts</link>
+        <description>Author&apos;s blog posts</description>
+        <lastBuildDate>Wed, 26 Oct 2022 15:06:44 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Elmstatic</generator>
+        <language>en</language>
+        <image>
+            <title>Author&apos;s fancy blog/concerts</title>
+            <url>https://example.com/img/logo.png</url>
+            <link>https://example.com/posts/concerts</link>
+        </image>
+        <copyright>Copyright: Author</copyright>
+        <item>
+            <title><![CDATA[Concert item]]></title>
+            <link>https://example.com/posts/concerts/2022-10-01-concert1</link>
+            <guid>https://example.com/posts/concerts/2022-10-01-concert1</guid>
+            <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Item body text....]]></description>
+        </item>
+    </channel>
+</rss>

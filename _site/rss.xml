@@ -4,7 +4,7 @@
         <title>Author&apos;s fancy blog</title>
         <link>https://example.com/posts</link>
         <description>Author&apos;s blog posts</description>
-        <lastBuildDate>Wed, 26 Oct 2022 11:39:31 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 26 Oct 2022 15:06:44 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -38,6 +38,13 @@ Spuiplein 150, Den Haag
 Saturday June 3rd, start: 17:00 & 19:00
 As was the tradition from before Covid, *there will be free food and
 drinks between th...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Concert item]]></title>
+            <link>https://example.com/posts/concerts/2022-10-01-concert1</link>
+            <guid>https://example.com/posts/concerts/2022-10-01-concert1</guid>
+            <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Item body text....]]></description>
         </item>
     </channel>
 </rss>

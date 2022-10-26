@@ -20,14 +20,15 @@ styles =
     global
         [ body
             [ padding <| px 0
-            , margin <| px 0
+            , marginLeft <| Css.em 2
+            , marginRight <| Css.em 2
             , backgroundColor <| hex "ffffff"
             , Css.color <| hex "000000"
             , fontFamilies [ "sans-serif", "Arial", .value sansSerif ]
             , fontSize <| px 18
             , lineHeight <| Css.em 1.4
             , fontWeight <| lighter
-           
+            
             ]
         , a
             [ Css.color <| hex "888888"
