@@ -1,0 +1,200 @@
+<!doctype html><html><head><title>Software | Author's fancy blog</title><meta charset="utf-8"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js"></script><script>hljs.initHighlightingOnLoad();</script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/styles/default.min.css" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Open+Sans|Proza+Libre|Inconsolata" rel="stylesheet" type="text/css"></head><body><div class="header-logo"><img alt="The Game Of Life Logo" src="/img/gameoflife940px.jpg" width="500"></div><div class="navigation"><ul><li><a href="/posts">Posts</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/software">Software</a></li></ul></div><div class="sidebar"></div><div class="sidebar2"></div><div class="content"><h1>Software</h1><div class="markdown"><p>We created our own software, WFSCollider which is <strong>free</strong> and open source ( <a href="https://github.com/GameOfLife">github</a> ). It runs on all mayor platforms (Windows, MacOS, Linux). 
+By default it starts in a preview mode, which allows you to preview your WFS piece in stereo,</p>
+<h2 id="installing-wfs-software">Installing WFS Software</h2>
+<p><strong>Installation on Windows, Mac Os and Linux:</strong></p>
+<p>In the past, we had a WFSCollider app installer for MacOS, however, it is now
+easier to run WFSCollider within a normal SuperCollider environment. There is a
+Supercollider ‘Quark’ for the WFS library, which makes this relatively easy.</p>
+<p>To run WFSCollider on any platform:</p>
+<ol>
+<li>Install supercollider: <a href="https://supercollider.github.io/">https://supercollider.github.io/</a>  </li>
+<li>Install sc3plugins: <a href="http://supercollider.github.io/sc3-plugins/">http://supercollider.github.io/sc3-plugins/</a><br>(this provides a .zip file, you can find instructions where to place the
+files under the same link)</li>
+<li>Open supercollider, open the menu language |&gt; Quarks. (Quarks are a
+package management system within Supercollider.)  </li>
+</ol>
+<p>Next, install the <strong>WFSCollider-Class-Library</strong> quark, by clicking the
+[+] next to it.  </p>
+<p>(This will also install the dependency-quarks:<br>Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)</p>
+<p>If you don’t see any quarks: on Windows and Mac OS, it may be necessary
+to install Git first, which you can fetch here:</p>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p>4. Once the Quark is installed, click the “Recompile Class Library”
+button.<br>Next, in the main supercollider window, type:</p>
+<p><code>WFS.startup;</code>  </p>
+<p>and hit SHIFT + ENTER keys to start.  </p>
+<p>It will take some time (a few minutes) to boot the very first time to
+generate some optimized code (panners). Subsequent boots will be much
+faster. On my own Windows test machine, I found it to work with my ASIO
+driver (using an RME Babyface interface), the default motherboard audio
+did not work, but that has been a source of trouble with other programs
+as well so it may be a quirk of that audio chip.  </p>
+<p><strong>The full manual:</strong></p>
+<p><a href="https://gameoflife.nl/wp-content/uploads/2022/08/Working-with-WFSCollider-v2.2.4.pdf">Working-with-WFSCollider-v2.2.4</a><a href="https://gameoflife.nl/wp-content/uploads/2022/08/Working-with-WFSCollider-v2.2.4.pdf" class="wp-block-file__button" download="">Download</a></p>
+<p><strong>Some things I didn’t get to in the workshop:</strong></p>
+<ul>
+<li>There is a mixer in the score editor, that allows you to control
+levels of all events within your score all at once. You can find
+this mixer under View.</li>
+<li>You can make folders of events, a folder will also have it’s own
+slider in the mixer.</li>
+<li>Examples of using code and scores can be found here:
+<a href="https://github.com/GameOfLife/WFSCollider-Class-Library/tree/master/Examples">https://github.com/GameOfLife/WFSCollider-Class-Library/tree/master/Examples</a></li>
+</ul>
+<p>If you want to run WFS distributed over multiple computers, this is
+easiest to achieve on Linux, since you will want to use PTP protocol to
+synchronize your computer clocks (PTP is not available for Mac OS). You
+will also want to use the Supernova version of the Supercollider server,
+since this provides the necessary accuracy on the server.</p>
+<p>You can reach us on casper@gameoflife.nl</p>
+</div></div><link href="/styles.css" rel="stylesheet" type="text/css"><style>body {
+    padding:0px;
+    margin:0px;
+    background-color:#ffffff;
+    color:#000000;
+    font-family:sans-serif, Arial, sans-serif;
+    font-size:18px;
+    line-height:1.4em;
+    font-weight:lighter;
+}
+
+a {
+    color:#888888;
+    text-decoration:none;
+}
+
+code {
+    font-family:Inconsolata, monospace;
+}
+
+pre  code {
+    overflow-x:scroll !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:sans-serif, Helvetica, sans-serif;
+    line-height:1.1em;
+}
+
+h1 {
+    font-size:2.66667em;
+    margin-bottom:2.0202rem;
+}
+
+h2 {
+    font-size:2em;
+    margin-bottom:1.61616rem;
+}
+
+h3 {
+    font-size:1.33333em;
+    margin-bottom:1.21212rem;
+}
+
+h4 {
+    font-size:1.2em;
+    margin-bottom:0.80808rem;
+}
+
+h5, h6 {
+    font-size:1em;
+    margin-bottom:0.60606rem;
+}
+
+p {
+    margin:auto auto 1.5rem;
+}
+
+small {
+    font-size:65%;
+}
+
+.header-logo {
+    padding-top:6px;
+    text-align:center;
+    background-color:#ffffff;
+}
+
+.navigation {
+    text-align:center;
+    background-color:#ffffff;
+    padding:10px;
+    margin-top:-20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .navigation {
+        margin-top:0px;
+    padding:0px;
+    text-align:right;
+    }
+}
+
+.navigation  ul {
+    margin:0px;
+    padding:0px;
+}
+
+@media only screen and (min-width: 600px) {
+    .navigation  ul {
+        line-height:100px;
+    }
+}
+
+.navigation  li {
+    display:inline-block;
+    margin-right:20px;
+}
+
+.content {
+    max-width:100vw;
+}
+
+.footer {
+    text-align:center;
+    border-top:2px solid #2f4858;
+    background-color:#348aa7;
+    color:#ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer {
+        line-height:80px;
+    text-align:right;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .footer  .link {
+        display:inline-block;
+    margin-right:20px;
+    }
+}
+
+.footer  a {
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.footer  svg {
+    padding-right:5px;
+    vertical-align:baseline;
+}
+
+.post-metadata {
+    margin-top:-0.5em;
+    margin-bottom:2em;
+}
+
+.post-metadata  a, .post-metadata  span {
+    display:inline-block;
+    margin-right:5px;
+}
+
+.post-metadata  a {
+    border:1px solid #e0e0e0;
+    border-radius:3px;
+    background-color:#fafafa;
+    padding-left:5px;
+    padding-right:5px;
+}</style></body></html>

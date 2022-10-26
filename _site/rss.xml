@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Author&apos;s fancy blog</title>
+        <link>https://example.com/posts</link>
+        <description>Author&apos;s blog posts</description>
+        <lastBuildDate>Wed, 26 Oct 2022 11:00:57 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Elmstatic</generator>
+        <language>en</language>
+        <image>
+            <title>Author&apos;s fancy blog</title>
+            <url>https://example.com/img/logo.png</url>
+            <link>https://example.com/posts</link>
+        </image>
+        <copyright>Copyright: Author</copyright>
+        <item>
+            <title><![CDATA[Another post]]></title>
+            <link>https://example.com/posts/2019-01-02-another</link>
+            <guid>https://example.com/posts/2019-01-02-another</guid>
+            <pubDate>Wed, 02 Jan 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Sonology WFS Festival 2022]]></title>
+            <link>https://example.com/posts/2022-05-26-Sonology WFS Festival</link>
+            <guid>https://example.com/posts/2022-05-26-Sonology WFS Festival</guid>
+            <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[In collaboration with the Institute of Sonology, we are happy to present
+a new edition of the WFS Festival on 3rd and 4th of June 2022. The
+system will be set up in the wonderful “New Music Studio” in Amare and
+we have no less then three concerts full of brand new spatial music to
+share with you!
+
+Location: New Music Lab on the 6th floor of Amare
+Spuiplein 150, Den Haag
+
+Saturday June 3rd, start: 17:00 & 19:00
+As was the tradition from before Covid, *there will be free food and
+drinks between th...]]></description>
+        </item>
+    </channel>
+</rss>
