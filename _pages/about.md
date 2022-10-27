@@ -2,6 +2,8 @@
 title: "About The Game of Life Foundation"
 ---
 
+![Wave Field Synthesis in Scheltema](/img/scheltema.jpg "image of WFS in building")
+
 The Game of Life was founded on September 13, 1999.
 
 The Game of Life aims to organize projects in the field of spatial representation in electronic music.
