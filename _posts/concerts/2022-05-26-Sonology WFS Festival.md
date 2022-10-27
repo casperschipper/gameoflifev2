@@ -1,7 +1,7 @@
 ---
 title: "Sonology WFS Festival 2022"
 tags: sonology
-thumb: "/img/logo.png"
+thumb: "/img/sonology_logo.jpg"
 ---
 
 In collaboration with the Institute of Sonology, we are happy to present

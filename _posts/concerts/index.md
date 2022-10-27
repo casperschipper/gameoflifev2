@@ -1,6 +1,4 @@
 ---
-title: "Hey there"
+title: "Upcoming WFS Concerts"
 layout: Concerts
 ---
-
-What what what ? _BOLD_

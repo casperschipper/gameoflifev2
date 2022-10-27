@@ -4,7 +4,7 @@
         <title>Author&apos;s fancy blog/concerts</title>
         <link>https://example.com/posts/concerts</link>
         <description>Author&apos;s blog posts</description>
-        <lastBuildDate>Thu, 27 Oct 2022 10:00:22 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Oct 2022 16:19:47 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -15,11 +15,33 @@
         </image>
         <copyright>Copyright: Author</copyright>
         <item>
-            <title><![CDATA[Concert item]]></title>
-            <link>https://example.com/posts/concerts/2022-10-01-concert1</link>
-            <guid>https://example.com/posts/concerts/2022-10-01-concert1</guid>
+            <title><![CDATA[Sonology WFS Festival 2022]]></title>
+            <link>https://example.com/posts/concerts/2022-05-26-Sonology WFS Festival</link>
+            <guid>https://example.com/posts/concerts/2022-05-26-Sonology WFS Festival</guid>
+            <pubDate>Thu, 26 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[In collaboration with the Institute of Sonology, we are happy to present
+a new edition of the WFS Festival on 3rd and 4th of June 2022. The
+system will be set up in the wonderful “New Music Studio” in Amare and
+we have no less then three concerts full of brand new spatial music to
+share with you!
+
+Location: New Music Lab on the 6th floor of Amare
+Spuiplein 150, Den Haag
+
+Saturday June 3rd, start: 17:00 & 19:00
+As was the tradition from before Covid, *there will be free food and
+drinks between th...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[WFS Concert: Sonic Cartography]]></title>
+            <link>https://example.com/posts/concerts/2022-10-01-Chatham-Cartography</link>
+            <guid>https://example.com/posts/concerts/2022-10-01-Chatham-Cartography</guid>
             <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Item body text....]]></description>
+            <description><![CDATA[Discover specially made composition for spatial sound technology, Wave Field Synthesis System by Patrimoni Acustic, Seth Ayyaz, John Young, Louise Rossiter, Nikki Sheth and Ryan Woods.
+
+This event is in partnership with University of Kent and Greenwich for the Conference, Sonic Cartography, Soundscape, Simulation and Re-enactment. (https://research.kent.ac.uk/sonic-palimpsest/sc2022/)
+
+Please note concert time is subject to change closer to the time as artist finalise the work during their resid...]]></description>
         </item>
     </channel>
 </rss>

@@ -4937,6 +4937,15 @@ var $elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 	}
 };
 var $elm$html$Html$a = _VirtualDom_node('a');
+var $elm$json$Json$Encode$string = _Json_wrap;
+var $elm$html$Html$Attributes$stringProperty = F2(
+	function (key, string) {
+		return A2(
+			_VirtualDom_property,
+			key,
+			$elm$json$Json$Encode$string(string));
+	});
+var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
 var $author$project$Elmstatic$PostList = F4(
 	function (posts, section, siteTitle, title) {
 		return {en: posts, cQ: section, bo: siteTitle, cW: title};
@@ -5024,14 +5033,6 @@ var $author$project$Elmstatic$decodePostList = A5(
 	A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
 var $elm$html$Html$div = _VirtualDom_node('div');
 var $elm$html$Html$h2 = _VirtualDom_node('h2');
-var $elm$json$Json$Encode$string = _Json_wrap;
-var $elm$html$Html$Attributes$stringProperty = F2(
-	function (key, string) {
-		return A2(
-			_VirtualDom_property,
-			key,
-			$elm$json$Json$Encode$string(string));
-	});
 var $elm$html$Html$Attributes$href = function (url) {
 	return A2(
 		$elm$html$Html$Attributes$stringProperty,
@@ -5496,7 +5497,6 @@ var $author$project$Elmstatic$layout = F2(
 				}
 			});
 	});
-var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
 var $elm$html$Html$h1 = _VirtualDom_node('h1');
 var $elm$html$Html$Attributes$alt = $elm$html$Html$Attributes$stringProperty('alt');
 var $elm$html$Html$li = _VirtualDom_node('li');
@@ -5518,14 +5518,23 @@ var $author$project$Page$header = _List_fromArray(
 		_List_fromArray(
 			[
 				A2(
-				$elm$html$Html$img,
+				$elm$html$Html$a,
 				_List_fromArray(
 					[
-						$elm$html$Html$Attributes$alt('The Game Of Life Logo'),
-						$elm$html$Html$Attributes$src('/img/gameoflife940px.jpg'),
-						A2($elm$html$Html$Attributes$attribute, 'width', '500')
+						$elm$html$Html$Attributes$href('/')
 					]),
-				_List_Nil)
+				_List_fromArray(
+					[
+						A2(
+						$elm$html$Html$img,
+						_List_fromArray(
+							[
+								$elm$html$Html$Attributes$alt('The Game Of Life Logo'),
+								$elm$html$Html$Attributes$src('/img/game of life logo.png'),
+								A2($elm$html$Html$Attributes$attribute, 'width', '500')
+							]),
+						_List_Nil)
+					]))
 			])),
 		A2(
 		$elm$html$Html$div,
@@ -5549,7 +5558,23 @@ var $author$project$Page$header = _List_fromArray(
 								$elm$html$Html$a,
 								_List_fromArray(
 									[
-										$elm$html$Html$Attributes$href('/concerts/concerts')
+										$elm$html$Html$Attributes$href('/posts')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('News')
+									]))
+							])),
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/concerts')
 									]),
 								_List_fromArray(
 									[
@@ -5565,11 +5590,27 @@ var $author$project$Page$header = _List_fromArray(
 								$elm$html$Html$a,
 								_List_fromArray(
 									[
-										$elm$html$Html$Attributes$href('/posts')
+										$elm$html$Html$Attributes$href('/media')
 									]),
 								_List_fromArray(
 									[
-										$elm$html$Html$text('Posts')
+										$elm$html$Html$text('Media')
+									]))
+							])),
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/software')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Software')
 									]))
 							])),
 						A2(
@@ -5602,22 +5643,6 @@ var $author$project$Page$header = _List_fromArray(
 								_List_fromArray(
 									[
 										$elm$html$Html$text('Contact')
-									]))
-							])),
-						A2(
-						$elm$html$Html$li,
-						_List_Nil,
-						_List_fromArray(
-							[
-								A2(
-								$elm$html$Html$a,
-								_List_fromArray(
-									[
-										$elm$html$Html$Attributes$href('/software')
-									]),
-								_List_fromArray(
-									[
-										$elm$html$Html$text('Software')
 									]))
 							]))
 					]))
@@ -8070,6 +8095,7 @@ var $rtfeldman$elm_css$Css$hex = function (str) {
 	}
 	return $rtfeldman$elm_css$Css$erroneousHex(str);
 };
+var $rtfeldman$elm_css$Css$Global$img = $rtfeldman$elm_css$Css$Global$typeSelector('img');
 var $elm$core$String$endsWith = _String_endsWith;
 var $rtfeldman$elm_css$Css$makeImportant = function (str) {
 	return A2(
@@ -8147,6 +8173,7 @@ var $rtfeldman$elm_css$Css$marginBottom = $rtfeldman$elm_css$Css$prop1('margin-b
 var $rtfeldman$elm_css$Css$marginLeft = $rtfeldman$elm_css$Css$prop1('margin-left');
 var $rtfeldman$elm_css$Css$marginRight = $rtfeldman$elm_css$Css$prop1('margin-right');
 var $rtfeldman$elm_css$Css$marginTop = $rtfeldman$elm_css$Css$prop1('margin-top');
+var $rtfeldman$elm_css$Css$maxHeight = $rtfeldman$elm_css$Css$prop1('max-height');
 var $rtfeldman$elm_css$Css$maxWidth = $rtfeldman$elm_css$Css$prop1('max-width');
 var $rtfeldman$elm_css$Css$Media$feature = F2(
 	function (key, _v0) {
@@ -8781,9 +8808,9 @@ var $author$project$Styles$styles = function () {
 							$rtfeldman$elm_css$Css$padding(
 							$rtfeldman$elm_css$Css$px(0)),
 							$rtfeldman$elm_css$Css$marginLeft(
-							$rtfeldman$elm_css$Css$em(2)),
+							$rtfeldman$elm_css$Css$em(10)),
 							$rtfeldman$elm_css$Css$marginRight(
-							$rtfeldman$elm_css$Css$em(2)),
+							$rtfeldman$elm_css$Css$em(10)),
 							$rtfeldman$elm_css$Css$backgroundColor(
 							$rtfeldman$elm_css$Css$hex('ffffff')),
 							$rtfeldman$elm_css$Css$color(
@@ -9027,9 +9054,9 @@ var $author$project$Styles$styles = function () {
 					_List_fromArray(
 						[
 							$rtfeldman$elm_css$Css$marginTop(
-							$rtfeldman$elm_css$Css$em(-0.5)),
+							$rtfeldman$elm_css$Css$em(-1.5)),
 							$rtfeldman$elm_css$Css$marginBottom(
-							$rtfeldman$elm_css$Css$em(2.0)),
+							$rtfeldman$elm_css$Css$em(0.5)),
 							$rtfeldman$elm_css$Css$Global$descendants(
 							_List_fromArray(
 								[
@@ -9059,6 +9086,36 @@ var $author$project$Styles$styles = function () {
 											$rtfeldman$elm_css$Css$px(5)),
 											$rtfeldman$elm_css$Css$paddingRight(
 											$rtfeldman$elm_css$Css$px(5))
+										]))
+								]))
+						])),
+					A2(
+					$rtfeldman$elm_css$Css$Global$class,
+					'thumb',
+					_List_fromArray(
+						[
+							$rtfeldman$elm_css$Css$maxWidth(
+							$rtfeldman$elm_css$Css$px(300)),
+							$rtfeldman$elm_css$Css$maxHeight(
+							$rtfeldman$elm_css$Css$px(300)),
+							A2($rtfeldman$elm_css$Css$property, 'object-fit', 'fit')
+						])),
+					A2(
+					$rtfeldman$elm_css$Css$Global$class,
+					'media-gallery',
+					_List_fromArray(
+						[
+							$rtfeldman$elm_css$Css$Global$descendants(
+							_List_fromArray(
+								[
+									$rtfeldman$elm_css$Css$Global$img(
+									_List_fromArray(
+										[
+											$rtfeldman$elm_css$Css$maxWidth(
+											$rtfeldman$elm_css$Css$px(300)),
+											$rtfeldman$elm_css$Css$maxHeight(
+											$rtfeldman$elm_css$Css$px(300)),
+											A2($rtfeldman$elm_css$Css$property, 'object-fit', 'fit')
 										]))
 								]))
 						]))
@@ -9166,21 +9223,22 @@ var $author$project$Posts$main = function () {
 					_List_fromArray(
 						[
 							A2(
-							$elm$html$Html$img,
-							_List_fromArray(
-								[
-									$elm$html$Html$Attributes$src(post.e$)
-								]),
-							_List_Nil),
-							A2(
 							$elm$html$Html$h2,
 							_List_Nil,
 							_List_fromArray(
 								[
 									$elm$html$Html$text(post.cW)
-								]))
-						])),
-					$author$project$Post$metadataHtml(post)
+								])),
+							$author$project$Post$metadataHtml(post),
+							A2(
+							$elm$html$Html$img,
+							_List_fromArray(
+								[
+									$elm$html$Html$Attributes$src(post.e$),
+									$elm$html$Html$Attributes$class('thumb')
+								]),
+							_List_Nil)
+						]))
 				]));
 	};
 	var postListContent = function (posts) {
@@ -9265,6 +9323,210 @@ var $author$project$Page$main = A2(
 						$author$project$Page$markdown(content.cb)
 					])));
 	});
+var $author$project$Media$header = _List_fromArray(
+	[
+		A2(
+		$elm$html$Html$div,
+		_List_fromArray(
+			[
+				$elm$html$Html$Attributes$class('header-logo')
+			]),
+		_List_fromArray(
+			[
+				A2(
+				$elm$html$Html$a,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$href('/')
+					]),
+				_List_fromArray(
+					[
+						A2(
+						$elm$html$Html$img,
+						_List_fromArray(
+							[
+								$elm$html$Html$Attributes$alt('The Game Of Life Logo'),
+								$elm$html$Html$Attributes$src('/img/game of life logo.png'),
+								A2($elm$html$Html$Attributes$attribute, 'width', '500')
+							]),
+						_List_Nil)
+					]))
+			])),
+		A2(
+		$elm$html$Html$div,
+		_List_fromArray(
+			[
+				$elm$html$Html$Attributes$class('navigation')
+			]),
+		_List_fromArray(
+			[
+				A2(
+				$elm$html$Html$ul,
+				_List_Nil,
+				_List_fromArray(
+					[
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/posts')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('News')
+									]))
+							])),
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/concerts')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Concerts')
+									]))
+							])),
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/media')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Media')
+									]))
+							])),
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/software')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Software')
+									]))
+							])),
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/about')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('About')
+									]))
+							])),
+						A2(
+						$elm$html$Html$li,
+						_List_Nil,
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$a,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$href('/contact')
+									]),
+								_List_fromArray(
+									[
+										$elm$html$Html$text('Contact')
+									]))
+							]))
+					]))
+			]))
+	]);
+var $author$project$Media$layout = F2(
+	function (title, contentItems) {
+		return _Utils_ap(
+			$author$project$Media$header,
+			_List_fromArray(
+				[
+					A2(
+					$elm$html$Html$div,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$class('content')
+						]),
+					_List_fromArray(
+						[
+							A2(
+							$elm$html$Html$h1,
+							_List_Nil,
+							_List_fromArray(
+								[
+									$elm$html$Html$text(title)
+								])),
+							A2(
+							$elm$html$Html$div,
+							_List_fromArray(
+								[
+									$elm$html$Html$Attributes$class('media-gallery')
+								]),
+							contentItems)
+						])),
+					$author$project$Elmstatic$stylesheet('/styles.css'),
+					$author$project$Styles$styles
+				]));
+	});
+var $author$project$Media$markdown = function (s) {
+	var mdOptions = {
+		dK: $elm$core$Maybe$Just('elm'),
+		dT: $elm$core$Maybe$Just(
+			{dx: false, eM: false}),
+		es: false,
+		eC: true
+	};
+	return A3(
+		$elm_explorations$markdown$Markdown$toHtmlWith,
+		mdOptions,
+		_List_fromArray(
+			[
+				A2($elm$html$Html$Attributes$attribute, 'class', 'markdown')
+			]),
+		s);
+};
+var $author$project$Media$main = A2(
+	$author$project$Elmstatic$layout,
+	$author$project$Elmstatic$decodePage,
+	function (content) {
+		return $elm$core$Result$Ok(
+			A2(
+				$author$project$Media$layout,
+				content.cW,
+				_List_fromArray(
+					[
+						$author$project$Media$markdown(content.cb)
+					])));
+	});
 var $elm$core$List$member = F2(
 	function (x, xs) {
 		return A2(
@@ -9275,7 +9537,7 @@ var $elm$core$List$member = F2(
 			xs);
 	});
 var $author$project$Concerts$isConcertPost = function (post) {
-	return A2($elm$core$List$member, 'concert', post.eN);
+	return A2($elm$core$List$member, 'concerts', post.eN);
 };
 var $author$project$Concerts$main = function () {
 	var sortPosts = function (posts) {
@@ -9305,6 +9567,7 @@ var $author$project$Concerts$main = function () {
 							$elm$html$Html$img,
 							_List_fromArray(
 								[
+									$elm$html$Html$Attributes$class('thumb'),
 									$elm$html$Html$Attributes$src(post.e$)
 								]),
 							_List_Nil),
@@ -9340,4 +9603,4 @@ var $author$project$Concerts$main = function () {
 						sortPosts(content.en))));
 		});
 }();
-_Platform_export({'Concerts':{'init':$author$project$Concerts$main($elm$json$Json$Decode$value)(0)},'Tag':{'init':$author$project$Tag$main($elm$json$Json$Decode$value)(0)},'Posts':{'init':$author$project$Posts$main($elm$json$Json$Decode$value)(0)},'Post':{'init':$author$project$Post$main($elm$json$Json$Decode$value)(0)},'Page':{'init':$author$project$Page$main($elm$json$Json$Decode$value)(0)}});}(this));
+_Platform_export({'Concerts':{'init':$author$project$Concerts$main($elm$json$Json$Decode$value)(0)},'Tag':{'init':$author$project$Tag$main($elm$json$Json$Decode$value)(0)},'Posts':{'init':$author$project$Posts$main($elm$json$Json$Decode$value)(0)},'Post':{'init':$author$project$Post$main($elm$json$Json$Decode$value)(0)},'Page':{'init':$author$project$Page$main($elm$json$Json$Decode$value)(0)},'Media':{'init':$author$project$Media$main($elm$json$Json$Decode$value)(0)}});}(this));

@@ -13,7 +13,7 @@ main =
         postItem post =
             div []
                 [ a [ href ("/" ++ post.link) ]
-                    [ img [ src post.thumb ] []
+                    [ img [ class "thumb", src post.thumb ] []
                     , h2 [] [ text post.title ]
                     ]
                 , Post.metadataHtml post
@@ -36,4 +36,4 @@ main =
 
 isConcertPost : Post -> Bool 
 isConcertPost post =
-    List.member "concert" post.tags
+    List.member "concerts" post.tags

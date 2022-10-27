@@ -1,5 +1,12 @@
-<!doctype html><html><head><title>Software | Author's fancy blog</title><meta charset="utf-8"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js"></script><script>hljs.initHighlightingOnLoad();</script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/styles/default.min.css" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Open+Sans|Proza+Libre|Inconsolata" rel="stylesheet" type="text/css"></head><body><div class="header-logo"><img alt="The Game Of Life Logo" src="/img/gameoflife940px.jpg" width="500"></div><div class="navigation"><ul><li><a href="/concerts/concerts">Concerts</a></li><li><a href="/posts">Posts</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/software">Software</a></li></ul></div><div class="content"><h1>Software</h1><div class="markdown"><p>We created our own software, WFSCollider which is <strong>free</strong> and open source ( <a href="https://github.com/GameOfLife">github</a> ). It runs on all mayor platforms (Windows, MacOS, Linux). 
-By default it starts in a preview mode, which allows you to preview your WFS piece in stereo,</p>
+<!doctype html><html><head><title>Software | Author's fancy blog</title><meta charset="utf-8"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js"></script><script>hljs.initHighlightingOnLoad();</script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/styles/default.min.css" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Open+Sans|Proza+Libre|Inconsolata" rel="stylesheet" type="text/css"></head><body><div class="header-logo"><a href="/"><img alt="The Game Of Life Logo" src="/img/game of life logo.png" width="500"></a></div><div class="navigation"><ul><li><a href="/posts">News</a></li><li><a href="/concerts">Concerts</a></li><li><a href="/media">Media</a></li><li><a href="/software">Software</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="content"><h1>Software</h1><div class="markdown"><p>For WFS content creation, the Game of Life developed our own software, called <strong>WFSCollider</strong>, which is <strong>free to download</strong>! ( <a href="https://github.com/GameOfLife">github</a> ). It runs on all mayor platforms (Windows, MacOS, Linux). </p>
+<p>It can be seen as a DAW for WFS Synthesis composition. Its features include:</p>
+<ul>
+<li>Graphical timeline, trajectory and position interfaces.</li>
+<li>Modular audio plugin system, which allows you to patch audio generators and processing together in chains (Unit-Lib).</li>
+<li>1-click to add real-time control over any parameter through OSC/Midi.</li>
+<li>Open source and scripting/coding friendly: for example in place code modification of many parts of the system.</li>
+</ul>
+<p>By default it starts in a preview mode, which allows you to preview your WFS piece in stereo, which you can than later import into the system.</p>
 <h2 id="installing-wfs-software">Installing WFS Software</h2>
 <p><strong>Installation on Windows, Mac Os and Linux:</strong></p>
 <p>In the past, we had a WFSCollider app installer for MacOS, however, it is now
@@ -31,8 +38,17 @@ did not work, but that has been a source of trouble with other programs
 as well so it may be a quirk of that audio chip.  </p>
 <p><strong>The full manual:</strong></p>
 <p><a href="https://gameoflife.nl/wp-content/uploads/2022/08/Working-with-WFSCollider-v2.2.4.pdf">Working-with-WFSCollider-v2.2.4</a><a href="https://gameoflife.nl/wp-content/uploads/2022/08/Working-with-WFSCollider-v2.2.4.pdf" class="wp-block-file__button" download="">Download</a></p>
-<p><strong>Some things I didn’t get to in the workshop:</strong></p>
+<p><strong>Some general tips when first starting:</strong></p>
 <ul>
+<li>If you save your score in the same folder as the soundfiles, the paths will
+be stored relative, and you can just copy your whole folder to the big WFS
+WFSSoundFiles folder without requiring any changes to the paths.</li>
+<li>You can splice events by clicking the vertical | symbol in the UScore
+window, this will splice the currently selected events at the location of
+the playbar.</li>
+<li>There are undo/redo arrows in most windows &lt;- -&gt;.</li>
+<li>Static point sources (the default) cannot change position while playing, use any “position filter” to turn
+the source into a dynamic panner.</li>
 <li>There is a mixer in the score editor, that allows you to control
 levels of all events within your score all at once. You can find
 this mixer under View.</li>
@@ -49,8 +65,8 @@ since this provides the necessary accuracy on the server.</p>
 <p>You can reach us on casper@gameoflife.nl</p>
 </div></div><link href="/styles.css" rel="stylesheet" type="text/css"><style>body {
     padding:0px;
-    margin-left:2em;
-    margin-right:2em;
+    margin-left:10em;
+    margin-right:10em;
     background-color:#ffffff;
     color:#000000;
     font-family:sans-serif, Arial, sans-serif;
@@ -183,8 +199,8 @@ small {
 }
 
 .post-metadata {
-    margin-top:-0.5em;
-    margin-bottom:2em;
+    margin-top:-1.5em;
+    margin-bottom:0.5em;
 }
 
 .post-metadata  a, .post-metadata  span {
@@ -198,4 +214,16 @@ small {
     background-color:#fafafa;
     padding-left:5px;
     padding-right:5px;
+}
+
+.thumb {
+    max-width:300px;
+    max-height:300px;
+    object-fit:fit;
+}
+
+.media-gallery  img {
+    max-width:300px;
+    max-height:300px;
+    object-fit:fit;
 }</style></body></html>

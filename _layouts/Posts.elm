@@ -13,10 +13,11 @@ main =
         postItem post =
             div []
                 [ a [ href ("/" ++ post.link) ]
-                    [ img [ src post.thumb ] []
-                    , h2 [] [ text post.title ]
+                    [ h2 [] [ text post.title ]
+                    , Post.metadataHtml post
+                    , img [ src post.thumb, class "thumb" ] []
                     ]
-                , Post.metadataHtml post
+                
                 ]
 
         postListContent posts =

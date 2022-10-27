@@ -20,8 +20,8 @@ styles =
     global
         [ body
             [ padding <| px 0
-            , marginLeft <| Css.em 2
-            , marginRight <| Css.em 2
+            , marginLeft <| Css.em 10
+            , marginRight <| Css.em 10
             , backgroundColor <| hex "ffffff"
             , Css.color <| hex "000000"
             , fontFamilies [ "sans-serif", "Arial", .value sansSerif ]
@@ -97,8 +97,8 @@ styles =
                 ]
             ]
         , class "post-metadata"
-            [ marginTop <| Css.em -0.5
-            , marginBottom <| Css.em 2.0
+            [ marginTop <| Css.em -1.5   
+            , marginBottom <| Css.em 0.5
             , descendants
                 [ each [ a, span ]
                     [ display inlineBlock
@@ -113,5 +113,22 @@ styles =
                     ]
                 ]
             ]
+        , class "thumb"
+        [ Css.maxWidth <| px 300
+        , Css.maxHeight <| px 300
+        , Css.property "object-fit" "fit"
+        ]
+        , class "media-gallery"
+        [
+            
+            descendants [ 
+                img
+                 [
+                    Css.maxWidth <| px 300
+                    , Css.maxHeight <| px 300
+                    , Css.property "object-fit" "fit"
+                ]
+            ]
+        ]
         ]
         |> Html.Styled.toUnstyled

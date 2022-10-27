@@ -2,8 +2,16 @@
 title: "Software"
 ---
 
-We created our own software, WFSCollider which is __free__ and open source ( [github](https://github.com/GameOfLife) ). It runs on all mayor platforms (Windows, MacOS, Linux). 
-By default it starts in a preview mode, which allows you to preview your WFS piece in stereo,
+For WFS content creation, the Game of Life developed our own software, called __WFSCollider__, which is __free to download__! ( [github](https://github.com/GameOfLife) ). It runs on all mayor platforms (Windows, MacOS, Linux). 
+
+It can be seen as a DAW for WFS Synthesis composition. Its features include:
+
+* Graphical timeline, trajectory and position interfaces.
+* Modular audio plugin system, which allows you to patch audio generators and processing together in chains (Unit-Lib).
+* 1-click to add real-time control over any parameter through OSC/Midi.
+* Open source and scripting/coding friendly: for example in place code modification of many parts of the system.
+
+By default it starts in a preview mode, which allows you to preview your WFS piece in stereo, which you can than later import into the system.
 
 ## Installing WFS Software
 
@@ -54,8 +62,17 @@ as well so it may be a quirk of that audio chip.
 href="https://gameoflife.nl/wp-content/uploads/2022/08/Working-with-WFSCollider-v2.2.4.pdf"
 class="wp-block-file__button" download="">Download</a>
 
-**Some things I didn’t get to in the workshop:**
+**Some general tips when first starting:**
 
+-   If you save your score in the same folder as the soundfiles, the paths will
+    be stored relative, and you can just copy your whole folder to the big WFS
+    WFSSoundFiles folder without requiring any changes to the paths.
+-   You can splice events by clicking the vertical | symbol in the UScore
+    window, this will splice the currently selected events at the location of
+    the playbar.
+-   There are undo/redo arrows in most windows <- ->.
+-   Static point sources (the default) cannot change position while playing, use any "position filter" to turn
+    the source into a dynamic panner.
 -   There is a mixer in the score editor, that allows you to control
     levels of all events within your score all at once. You can find
     this mixer under View.
