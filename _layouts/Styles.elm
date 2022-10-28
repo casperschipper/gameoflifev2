@@ -11,7 +11,7 @@ styles : Html msg
 styles =
     let
         wideScreen =
-            withMedia [ only screen [ Media.minWidth <| Css.px 900 ] ]
+            withMedia [ only screen [ Media.minWidth <| Css.px 750 ] ]
 
         codeStyle =
             [ fontFamilies [ "Inconsolata", .value monospace ]
@@ -20,8 +20,10 @@ styles =
     global
         [ body
             [ padding <| px 0
-            , marginLeft <| Css.em 10
-            , marginRight <| Css.em 10
+            , marginLeft <| Css.auto
+            , marginRight <| Css.auto
+            , Css.width <| Css.vw 80
+
             --, Css.maxWidth <| Css.px 750
             , backgroundColor <| hex "ffffff"
             , Css.color <| hex "000000"
@@ -29,7 +31,6 @@ styles =
             , fontSize <| px 18
             , lineHeight <| Css.em 1.4
             , fontWeight <| lighter
-            
             ]
         , a
             [ Css.color <| hex "888888"
@@ -55,11 +56,13 @@ styles =
             [ paddingTop <| px 6
             , textAlign center
             , backgroundColor <| hex "ffffff"
+            , Css.maxWidth <| Css.pct 25
             --, wideScreen [ textAlign left, borderBottom3 (px 2) solid (hex "3c8765") ]
             ]
         , class "navigation"
             [ textAlign center
-             --borderBottom3 (px 2) solid (hex "3c8765")
+
+            --borderBottom3 (px 2) solid (hex "3c8765")
             , backgroundColor <| hex "ffffff"
             , padding <| px 10
             , marginTop <| px -20
@@ -77,8 +80,10 @@ styles =
             , wideScreen [ marginTop <| px 0, padding <| px 0, textAlign right ]
             ]
         , class "content" [ Css.maxWidth <| vw 100 ]
-        , class "markdown" [ Css.maxWidth <| px 800,
-        descendants [ img [Css.maxWidth <| Css.vw 50 ] ] ]
+        , class "markdown"
+            [ Css.maxWidth <| px 800
+            , descendants [ img [ Css.maxWidth <| Css.vw 50 ] ]
+            ]
         , class "footer"
             [ textAlign center
             , borderTop3 (px 2) solid (hex "2f4858")
@@ -100,7 +105,7 @@ styles =
                 ]
             ]
         , class "post-metadata"
-            [ marginTop <| Css.em -1.5   
+            [ marginTop <| Css.em -1.5
             , marginBottom <| Css.em 0.5
             , descendants
                 [ each [ a, span ]
@@ -117,21 +122,18 @@ styles =
                 ]
             ]
         , class "thumb"
-        [ Css.maxWidth <| px 300
-        , Css.maxHeight <| px 300
-        , Css.property "object-fit" "fit"
-        ]
+            [ Css.maxWidth <| px 300
+            , Css.maxHeight <| px 300
+            , Css.property "object-fit" "fit"
+            ]
         , class "media-gallery"
-        [
-            
-            descendants [ 
-                img
-                 [
-                    Css.maxWidth <| px 300
+            [ descendants
+                [ img
+                    [ Css.maxWidth <| px 300
                     , Css.maxHeight <| px 300
                     , Css.property "object-fit" "fit"
+                    ]
                 ]
             ]
-        ]
         ]
         |> Html.Styled.toUnstyled

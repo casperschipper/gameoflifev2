@@ -5418,15 +5418,6 @@ var $author$project$Elmstatic$htmlTemplate = F2(
 									A2($elm$html$Html$Attributes$attribute, 'charset', 'utf-8')
 								]),
 							_List_Nil),
-							A3(
-							$elm$html$Html$node,
-							'meta',
-							_List_fromArray(
-								[
-									A2($elm$html$Html$Attributes$attribute, 'name', 'viewport'),
-									A2($elm$html$Html$Attributes$attribute, 'content', 'width=device-width, initial-scale=1.0')
-								]),
-							_List_Nil),
 							$author$project$Elmstatic$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js'),
 							$author$project$Elmstatic$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js'),
 							$author$project$Elmstatic$inlineScript('hljs.initHighlightingOnLoad();'),
@@ -8778,6 +8769,7 @@ var $rtfeldman$elm_css$Css$verticalAlign = function (fn) {
 };
 var $rtfeldman$elm_css$Css$VwUnits = 0;
 var $rtfeldman$elm_css$Css$vw = A2($rtfeldman$elm_css$Css$Internal$lengthConverter, 0, 'vw');
+var $rtfeldman$elm_css$Css$width = $rtfeldman$elm_css$Css$prop1('width');
 var $rtfeldman$elm_css$Css$Preprocess$WithMedia = F2(
 	function (a, b) {
 		return {$: 4, a: a, b: b};
@@ -8793,7 +8785,7 @@ var $author$project$Styles$styles = function () {
 				_List_fromArray(
 					[
 						$rtfeldman$elm_css$Css$Media$minWidth(
-						$rtfeldman$elm_css$Css$px(900))
+						$rtfeldman$elm_css$Css$px(750))
 					]))
 			]));
 	var codeStyle = _List_fromArray(
@@ -8816,10 +8808,10 @@ var $author$project$Styles$styles = function () {
 						[
 							$rtfeldman$elm_css$Css$padding(
 							$rtfeldman$elm_css$Css$px(0)),
-							$rtfeldman$elm_css$Css$marginLeft(
-							$rtfeldman$elm_css$Css$em(10)),
-							$rtfeldman$elm_css$Css$marginRight(
-							$rtfeldman$elm_css$Css$em(10)),
+							$rtfeldman$elm_css$Css$marginLeft($rtfeldman$elm_css$Css$auto),
+							$rtfeldman$elm_css$Css$marginRight($rtfeldman$elm_css$Css$auto),
+							$rtfeldman$elm_css$Css$width(
+							$rtfeldman$elm_css$Css$vw(80)),
 							$rtfeldman$elm_css$Css$backgroundColor(
 							$rtfeldman$elm_css$Css$hex('ffffff')),
 							$rtfeldman$elm_css$Css$color(
@@ -8946,7 +8938,9 @@ var $author$project$Styles$styles = function () {
 							$rtfeldman$elm_css$Css$px(6)),
 							$rtfeldman$elm_css$Css$textAlign($rtfeldman$elm_css$Css$center),
 							$rtfeldman$elm_css$Css$backgroundColor(
-							$rtfeldman$elm_css$Css$hex('ffffff'))
+							$rtfeldman$elm_css$Css$hex('ffffff')),
+							$rtfeldman$elm_css$Css$maxWidth(
+							$rtfeldman$elm_css$Css$pct(25))
 						])),
 					A2(
 					$rtfeldman$elm_css$Css$Global$class,
@@ -9287,69 +9281,6 @@ var $author$project$Posts$main = function () {
 		});
 }();
 var $author$project$Tag$main = $author$project$Posts$main;
-var $elm$core$Maybe$isJust = function (maybe) {
-	if (!maybe.$) {
-		return true;
-	} else {
-		return false;
-	}
-};
-var $elm_explorations$markdown$Markdown$toHtmlWith = _Markdown_toHtml;
-var $author$project$Page$markdown = function (s) {
-	var mdOptions = {
-		dK: $elm$core$Maybe$Just('elm'),
-		dT: $elm$core$Maybe$Just(
-			{dx: false, eM: false}),
-		es: false,
-		eC: true
-	};
-	return A3(
-		$elm_explorations$markdown$Markdown$toHtmlWith,
-		mdOptions,
-		_List_fromArray(
-			[
-				A2($elm$html$Html$Attributes$attribute, 'class', 'markdown')
-			]),
-		s);
-};
-var $author$project$Post$main = A2(
-	$author$project$Elmstatic$layout,
-	$author$project$Elmstatic$decodePost,
-	function (content) {
-		return $elm$core$Result$Ok(
-			A2(
-				$author$project$Page$layout,
-				content.cW,
-				_List_fromArray(
-					[
-						$author$project$Post$metadataHtml(content),
-						$author$project$Page$markdown(content.cb)
-					])));
-	});
-var $author$project$Elmstatic$Page = F4(
-	function (content, format, siteTitle, title) {
-		return {cb: content, ci: format, bo: siteTitle, cW: title};
-	});
-var $author$project$Elmstatic$decodePage = A5(
-	$elm$json$Json$Decode$map4,
-	$author$project$Elmstatic$Page,
-	$author$project$Elmstatic$decodeContent,
-	$author$project$Elmstatic$decodeFormat,
-	A2($elm$json$Json$Decode$field, 'siteTitle', $elm$json$Json$Decode$string),
-	A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
-var $author$project$Page$main = A2(
-	$author$project$Elmstatic$layout,
-	$author$project$Elmstatic$decodePage,
-	function (content) {
-		return $elm$core$Result$Ok(
-			A2(
-				$author$project$Page$layout,
-				content.cW,
-				_List_fromArray(
-					[
-						$author$project$Page$markdown(content.cb)
-					])));
-	});
 var $author$project$Media$header = _List_fromArray(
 	[
 		A2(
@@ -9524,6 +9455,14 @@ var $author$project$Media$layout = F2(
 					$author$project$Styles$styles
 				]));
 	});
+var $elm$core$Maybe$isJust = function (maybe) {
+	if (!maybe.$) {
+		return true;
+	} else {
+		return false;
+	}
+};
+var $elm_explorations$markdown$Markdown$toHtmlWith = _Markdown_toHtml;
 var $author$project$Media$markdown = function (s) {
 	var mdOptions = {
 		dK: $elm$core$Maybe$Just('elm'),
@@ -9541,6 +9480,61 @@ var $author$project$Media$markdown = function (s) {
 			]),
 		s);
 };
+var $author$project$Post$main = A2(
+	$author$project$Elmstatic$layout,
+	$author$project$Elmstatic$decodePost,
+	function (content) {
+		return $elm$core$Result$Ok(
+			A2(
+				$author$project$Media$layout,
+				content.cW,
+				_List_fromArray(
+					[
+						$author$project$Post$metadataHtml(content),
+						$author$project$Media$markdown(content.cb)
+					])));
+	});
+var $author$project$Elmstatic$Page = F4(
+	function (content, format, siteTitle, title) {
+		return {cb: content, ci: format, bo: siteTitle, cW: title};
+	});
+var $author$project$Elmstatic$decodePage = A5(
+	$elm$json$Json$Decode$map4,
+	$author$project$Elmstatic$Page,
+	$author$project$Elmstatic$decodeContent,
+	$author$project$Elmstatic$decodeFormat,
+	A2($elm$json$Json$Decode$field, 'siteTitle', $elm$json$Json$Decode$string),
+	A2($elm$json$Json$Decode$field, 'title', $elm$json$Json$Decode$string));
+var $author$project$Page$markdown = function (s) {
+	var mdOptions = {
+		dK: $elm$core$Maybe$Just('elm'),
+		dT: $elm$core$Maybe$Just(
+			{dx: false, eM: false}),
+		es: false,
+		eC: true
+	};
+	return A3(
+		$elm_explorations$markdown$Markdown$toHtmlWith,
+		mdOptions,
+		_List_fromArray(
+			[
+				A2($elm$html$Html$Attributes$attribute, 'class', 'markdown')
+			]),
+		s);
+};
+var $author$project$Page$main = A2(
+	$author$project$Elmstatic$layout,
+	$author$project$Elmstatic$decodePage,
+	function (content) {
+		return $elm$core$Result$Ok(
+			A2(
+				$author$project$Page$layout,
+				content.cW,
+				_List_fromArray(
+					[
+						$author$project$Page$markdown(content.cb)
+					])));
+	});
 var $author$project$Media$main = A2(
 	$author$project$Elmstatic$layout,
 	$author$project$Elmstatic$decodePage,
@@ -9624,7 +9618,7 @@ var $author$project$Concerts$main = function () {
 		function (content) {
 			return $elm$core$Result$Ok(
 				A2(
-					$author$project$Page$layout,
+					$author$project$Media$layout,
 					content.cW,
 					postListContent(
 						sortPosts(content.en))));

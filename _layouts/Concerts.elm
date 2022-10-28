@@ -3,7 +3,7 @@ module Concerts exposing (main)
 import Elmstatic exposing (..)
 import Html exposing (..)
 import Html.Attributes as Attr exposing (alt, attribute, class, href, src)
-import Page
+import Media
 import Post 
 
 
@@ -32,7 +32,7 @@ main =
     in
     Elmstatic.layout Elmstatic.decodePostList <|
         \content ->
-            Ok <| Page.layout content.title <| postListContent <| sortPosts content.posts
+            Ok <| Media.layout content.title <| postListContent <| sortPosts content.posts
 
 isConcertPost : Post -> Bool 
 isConcertPost post =

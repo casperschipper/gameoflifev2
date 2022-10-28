@@ -3,7 +3,7 @@ module Post exposing (main, metadataHtml)
 import Elmstatic exposing (..)
 import Html exposing (..)
 import Html.Attributes as Attr exposing (alt, attribute, class, href, src)
-import Page
+import Media
 
 
 tagsToHtml : List String -> List (Html Never)
@@ -33,6 +33,6 @@ main =
     Elmstatic.layout Elmstatic.decodePost <|
         \content ->
             Ok <|
-                Page.layout
+                Media.layout
                     content.title
-                    [ metadataHtml content, Page.markdown content.content ]
+                    [ metadataHtml content, Media.markdown content.content ]
