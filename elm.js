@@ -5418,6 +5418,15 @@ var $author$project$Elmstatic$htmlTemplate = F2(
 									A2($elm$html$Html$Attributes$attribute, 'charset', 'utf-8')
 								]),
 							_List_Nil),
+							A3(
+							$elm$html$Html$node,
+							'meta',
+							_List_fromArray(
+								[
+									A2($elm$html$Html$Attributes$attribute, 'name', 'viewport'),
+									A2($elm$html$Html$Attributes$attribute, 'content', 'width=device-width, initial-scale=1.0')
+								]),
+							_List_Nil),
 							$author$project$Elmstatic$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js'),
 							$author$project$Elmstatic$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js'),
 							$author$project$Elmstatic$inlineScript('hljs.initHighlightingOnLoad();'),
@@ -5530,7 +5539,7 @@ var $author$project$Page$header = _List_fromArray(
 						_List_fromArray(
 							[
 								$elm$html$Html$Attributes$alt('The Game Of Life Logo'),
-								$elm$html$Html$Attributes$src('/img/game of life logo.png'),
+								$elm$html$Html$Attributes$src('/img/game_of_life_logo.png'),
 								A2($elm$html$Html$Attributes$attribute, 'width', '500')
 							]),
 						_List_Nil)
@@ -8996,6 +9005,24 @@ var $author$project$Styles$styles = function () {
 						])),
 					A2(
 					$rtfeldman$elm_css$Css$Global$class,
+					'markdown',
+					_List_fromArray(
+						[
+							$rtfeldman$elm_css$Css$maxWidth(
+							$rtfeldman$elm_css$Css$px(800)),
+							$rtfeldman$elm_css$Css$Global$descendants(
+							_List_fromArray(
+								[
+									$rtfeldman$elm_css$Css$Global$img(
+									_List_fromArray(
+										[
+											$rtfeldman$elm_css$Css$maxWidth(
+											$rtfeldman$elm_css$Css$vw(50))
+										]))
+								]))
+						])),
+					A2(
+					$rtfeldman$elm_css$Css$Global$class,
 					'footer',
 					_List_fromArray(
 						[
@@ -9346,7 +9373,7 @@ var $author$project$Media$header = _List_fromArray(
 						_List_fromArray(
 							[
 								$elm$html$Html$Attributes$alt('The Game Of Life Logo'),
-								$elm$html$Html$Attributes$src('/img/game of life logo.png'),
+								$elm$html$Html$Attributes$src('/img/game_of_life_logo.png'),
 								A2($elm$html$Html$Attributes$attribute, 'width', '500')
 							]),
 						_List_Nil)

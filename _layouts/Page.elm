@@ -55,7 +55,7 @@ header : List (Html Never)
 header =
     [ div [ class "header-logo" ]
         [ a [ href "/" ]
-            [ img [ alt "The Game Of Life Logo", src "/img/game of life logo.png", attribute "width" "500" ]
+            [ img [ alt "The Game Of Life Logo", src "/img/game_of_life_logo.png", attribute "width" "500" ]
                 []
             ]
         ]

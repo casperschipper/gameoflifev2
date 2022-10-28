@@ -22,6 +22,7 @@ styles =
             [ padding <| px 0
             , marginLeft <| Css.em 10
             , marginRight <| Css.em 10
+            --, Css.maxWidth <| Css.px 750
             , backgroundColor <| hex "ffffff"
             , Css.color <| hex "000000"
             , fontFamilies [ "sans-serif", "Arial", .value sansSerif ]
@@ -76,6 +77,8 @@ styles =
             , wideScreen [ marginTop <| px 0, padding <| px 0, textAlign right ]
             ]
         , class "content" [ Css.maxWidth <| vw 100 ]
+        , class "markdown" [ Css.maxWidth <| px 800,
+        descendants [ img [Css.maxWidth <| Css.vw 50 ] ] ]
         , class "footer"
             [ textAlign center
             , borderTop3 (px 2) solid (hex "2f4858")
