@@ -3,11 +3,13 @@
 This new version of the Game of Life website is built using "elmstatic". Elmstatic is a static site generator: it takes a folder of markdown pages and posts and turns it into static HTML website. The advantage is: no database is required, so it can be completely managed through github, and the output (plain HTML) is simple enough that I can change it without too much suffering. Static HTML is also good for search engines and accessibility.
 
 To add content you need to install the following:
-[elm](https://guide.elm-lang.org/install/elm.html)
-[elmstatic](https://korban.net/elm/elmstatic/) (via NPM)
+
+- [elm](https://guide.elm-lang.org/install/elm.html) (direct installer)
+- [elmstatic](https://korban.net/elm/elmstatic/) (via NPM)
 
 For previewing, you may like to have:
-[http-server](https://www.npmjs.com/package/http-server) (via NPM)
+
+- [http-server](https://www.npmjs.com/package/http-server) (via NPM)
 
 You can add posts in the _posts folder, which will be displayed in "News" and
 homepage. Concerts should be added within the _posts/concerts folder, so they
