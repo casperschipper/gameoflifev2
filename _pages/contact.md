@@ -2,9 +2,12 @@
 title: "Contact"
 ---
 
-If you want to contact us, please find us at:
-<a href="mailto:casper@gamoflife.nl">Casper</a>
+Follow us on [Facebook](<https://www.facebook.com/TheGameOfLife.nl>)
 
-# Game of Life WFS mailing list:
 
+__The Game of Life mailing list__<br>
 <a href="mailto:casper@gameoflife.nl?subject=subscribe me&body=please keep me posted on WFS events">click to subscribe</a>
+
+__Mail__
+<mailto:casper@gamoflife.nl>
+
