@@ -7,5 +7,6 @@ layout: Media
 [![wfs in MACBA Barcelona](/img/macba.jpg)](/img/macba.jpg)
 [![wfs in scheltema, Leiden](/img/scheltema.jpg)](/img/scheltema.jpg)
 [![in Venice](/img/venice.jpg)](/img/venice.jpg)
+[![Sonology](/img/sonology_flyer.jpg)](/img/sonology_flyer.jpg)
 
 

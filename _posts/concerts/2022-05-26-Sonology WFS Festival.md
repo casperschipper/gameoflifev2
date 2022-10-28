@@ -21,11 +21,5 @@ drinks between the two concerts* on this day!
 
 **June 4th, start: 14:00**
 
-<figure>
-<img
-src="https://gameoflife.nl/wp-content/uploads/2022/05/WFSFestival20221-1-1-724x1024.png"
-class="wp-image-698" loading="lazy"
-srcset="https://gameoflife.nl/wp-content/uploads/2022/05/WFSFestival20221-1-1-724x1024.png 724w, https://gameoflife.nl/wp-content/uploads/2022/05/WFSFestival20221-1-1-212x300.png 212w, https://gameoflife.nl/wp-content/uploads/2022/05/WFSFestival20221-1-1-768x1086.png 768w, https://gameoflife.nl/wp-content/uploads/2022/05/WFSFestival20221-1-1-1086x1536.png 1086w, https://gameoflife.nl/wp-content/uploads/2022/05/WFSFestival20221-1-1.png 1414w"
-sizes="(max-width: 724px) 100vw, 724px" width="724" height="1024" />
-</figure>
+[![Sonology](/img/sonology_flyer.jpg)](/img/sonology_flyer.jpg)
 

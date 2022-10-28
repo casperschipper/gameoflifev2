@@ -2,7 +2,7 @@
 title: "WFS & The Game Of Life"
 ---
 
-[Read about "The Game of Life Foundation"](#about-the-game-of-life-foundation)
+[Read about "The Game of Life Foundation"](#about-the-game-of-life-foundation)<br>
 [Who is the game of life ?](#who-is-the-game-of-life)
 
 About Wave Field Synthesis
@@ -63,6 +63,8 @@ In 2004 we traveled with a number of composers to the Fraunhofer Institute in Il
 November 2006 saw the premiere of the first concert in the series "THE 192 Loudspeaker Experience (Focussed Sound in Sonic Space). Due to great public interest, concerts had to be continuously scheduled.
 
 In the meantime, there has been much interest from composers, programmers and other institutions in working with the WFS system.
+
+<a id="who-is-the-game-of-life"></a>
 
 # Who is the game of life ?
 
