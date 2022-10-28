@@ -1,6 +1,10 @@
 # Website The Game of Life
 
-This new version of the Game of Life website is built using "elmstatic". Elmstatic is a static site generator: it takes a folder of markdown pages and posts and turns it into static HTML website. It is inspired by Jekyll. The advantage is: no database is required, so it can be completely managed through github, and the output (plain HTML) is simple enough that I can change it without too much suffering. Static HTML is also good for search engines and accessibility.
+This new version of the Game of Life website is built using "elmstatic". Elmstatic is a static site generator: it takes a folder of markdown pages and posts and turns it into static HTML website. It is inspired by Jekyll. 
+
+You can customize elmstatic's layout etc.. through Elm, but you don't need to understand Elm to write content, it is all just Markdown.
+
+The advantage is: no database is required, so it can be completely managed through github, and the output (plain HTML) is simple enough that I can change it without too much suffering. Static HTML is also good for search engines and accessibility.
 
 To add content you need to install the following:
 
