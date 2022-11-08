@@ -9585,22 +9585,22 @@ var $author$project$Concerts$main = function () {
 					_List_fromArray(
 						[
 							A2(
-							$elm$html$Html$img,
-							_List_fromArray(
-								[
-									$elm$html$Html$Attributes$class('thumb'),
-									$elm$html$Html$Attributes$src(post.e$)
-								]),
-							_List_Nil),
-							A2(
 							$elm$html$Html$h2,
 							_List_Nil,
 							_List_fromArray(
 								[
 									$elm$html$Html$text(post.cW)
-								]))
-						])),
-					$author$project$Post$metadataHtml(post)
+								])),
+							$author$project$Post$metadataHtml(post),
+							A2(
+							$elm$html$Html$img,
+							_List_fromArray(
+								[
+									$elm$html$Html$Attributes$src(post.e$),
+									$elm$html$Html$Attributes$class('thumb')
+								]),
+							_List_Nil)
+						]))
 				]));
 	};
 	var postListContent = function (posts) {

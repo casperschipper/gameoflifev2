@@ -3,17 +3,15 @@ title: "WFS & The Game Of Life"
 ---
 
 [Read about "The Game of Life Foundation"](#about-the-game-of-life-foundation)<br>
-[Who is the game of life ?](#who-is-the-game-of-life)
+[Who is The Game of Life?](#who-is-the-game-of-life)
 
 About Wave Field Synthesis
 --------------------------
-
 
 **What is Wave Field Synthesis?**
 
 Wave Field Synthesis (WFS) is a sound production technology designed specifically for spatial audio rendering. Virtual acoustic environments are simulated and synthesised using large numbers of loudspeakers. The innovation of this technology is that sound can appear to emanate from desired virtual starting points, and then move through space in many possible defined spatial pathways. The WFS system from The Game of Life consists of 192 speakers, which are arranged in a square formation of 10 by 10 meters. Within this formation sounds can be composed to move _within_ this square space, however the interesting point is that it is also possible to move sounds outside of this loudspeaker square. So the question is what makes this phenomenon possible considering the loudspeakers are all physically directed _inwards_.
 
-Sound waves can be compared by analogy to concentric water waves. Suppose one throws a stone into the water. At the point where the stone makes contact with the water surface, spherical waves are created. Imagine that these waves were to encounter a series of boundary points, which consisted of a series of poles, then behind these poles new small waves would emerge. If these poles were placed equidistant from each other, then these small waves would eventually reform into the original wave again. The WFS system works in a similar fashion. Instead of poles in water, our sound waves encounter boundary points of individual loudspeakers placed equidistant from each other. The composer can ‘throw’ their sounds into the space like stones into the water. Using specially designed software, the composer can programme sounds to move in space and to follow many possible trajectory’s. A sound could appear to originate from a fixed point and remain there or it could be programmed to move in patterns within and outside the square formation of the loudspeaker arrays. This possibility of being able to move sounds ‘inside’ and ‘outside’ the direct listening environment offers endless creative opportunities for the artist. The composer can also choose to have sound events manifest physically both inside and outside the speaker array formation. For example, it would be possible to render the sound of thunder rumbling in the far off distance just as one would experience it in nature! This can be accomplished by simply reproducing the appropriate sound pressure level to evoke such a sonic environment in the loudspeaker square. The ‘outer’ sound waves then are _reconstructed_ by multiple loudspeakers. Conventional sound reproduction techniques like stereo and surround _suggest_ spatial movements, by perceptually tricking one’s brain using knowledge informed by principles of psychoacoustics. The spatiality of WFS, however, is real. Further down we elaborate on this.
 
 Technical information  
 The WFS technique is based on a theoretical principal of the Dutch mathematician and physicist Christiaan Huygens from the 17th century. In this principle a spherical wave passes its energy to its neighboring ‘particles’, which in turn radiates another spherical wave, in such a way that the wave at position X can be predicted. In other words, this principle states that any wave front can be regarded as a superposition of elementary spherical waves. This means that any wavefront can then be synthesised from such elementary waves.
@@ -34,7 +32,7 @@ Sounds are no longer _simulated_ (like stereo and surround systems which use psy
 
 <a id="about-the-game-of-life-foundation"></a>
 
-# About the game of life foundation:
+# About The Game of Life Foundation:
 
 The Game of Life was founded on September 13, 1999.
 
