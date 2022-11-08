@@ -1,5 +1,5 @@
 #!/bin/sh
 
-elmstatic build
+elmstatic build -d
 cp -v -R _site/ ../release/
 

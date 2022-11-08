@@ -1,5 +1,5 @@
 ---
-title: "WFS Concert x Suitman Jungle x Newtoy x Mark Eaglen"
+title: "WFS Concert x Jane x Seth x William  & Vanissa x C. Lavender"
 thumb: "/image/suitman.jpg"
 tags:
 ---
