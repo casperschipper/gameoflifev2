@@ -1,6 +1,6 @@
 ---
 title: "WFS Concert x Suitman Jungle x Newtoy x Mark Eaglen"
-thumb: "/image/suitman.jpg"
+thumb: "/img/suitman.jpg"
 tags:
 ---
 

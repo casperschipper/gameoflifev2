@@ -1,6 +1,6 @@
 ---
 title: "WFS Concert x Jane x Seth x William  & Vanissa x C. Lavender"
-thumb: "/image/suitman.jpg"
+thumb: "/img/chatham1.jpg"
 tags:
 ---
 

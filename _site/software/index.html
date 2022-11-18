@@ -17,15 +17,29 @@ Supercollider ‘Quark’ for the WFS library, which makes this relatively easy.
 <li>Install supercollider: <a href="https://supercollider.github.io/">https://supercollider.github.io/</a>  </li>
 <li>Install sc3plugins: <a href="http://supercollider.github.io/sc3-plugins/">http://supercollider.github.io/sc3-plugins/</a><br>(this provides a .zip file, you can find instructions where to place the
 files under the same link)</li>
-<li>Open supercollider, open the menu language |&gt; Quarks. (Quarks are a
-package management system within Supercollider.)  </li>
+<li><p>(Optional): if you do not have git installed, you will need to install this
+as well, since Git is required for installing Quarks within supercollider.</p>
+<p> You can find the installation instructions for git here:
+ <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<p> <strong>Installing git in MacOS:</strong></p>
+<p> Apple does not provide git by default, and their xcode tools are an enourmous download, so by far the easiest way is to user a program called Homebrew:</p>
+<ul>
+<li>Install homebrew, see <a href="https://brew.sh/">https://brew.sh/</a></li>
+<li>Install git:<pre><code class="lang-bash">      brew install git
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>Open Supercollider, open the menu <strong>Language</strong> &gt; <strong>Quarks</strong>. 
+(you can also write Quarks.gui; in an empty document and hit <em>shift+enter</em> to evaluate). 
+Quarks are a package management system within Supercollider.</p>
+</li>
 </ol>
 <p>Next, install the <strong>WFSCollider-Class-Library</strong> quark, by clicking the
-[+] next to it.  </p>
-<p>(This will also install the dependency-quarks:<br>Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)</p>
-<p>If you don’t see any quarks: on Windows and Mac OS, it may be necessary
-to install Git first, which you can fetch here:</p>
-<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+[+] next to it, you may have to refresh the list first to see it.</p>
+<p>(Installing the WFSCollider-Class-Library will also install the dependency-quarks:<br>Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)</p>
+<p>If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3
+<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
 <p>4. Once the Quark is installed, click the “Recompile Class Library”
 button.<br>Next, in the main supercollider window, type:</p>
 <p><code>WFS.startup;</code>  </p>
