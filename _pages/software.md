@@ -73,9 +73,7 @@ as well so it may be a quirk of that audio chip.
 
 **The full manual:**
 
-[Working-with-WFSCollider-v2.2.4](https://gameoflife.nl/wp-content/uploads/2022/08/Working-with-WFSCollider-v2.2.4.pdf)<a
-href="https://gameoflife.nl/wp-content/uploads/2022/08/Working-with-WFSCollider-v2.2.4.pdf"
-class="wp-block-file__button" download="">Download</a>
+[Working-with-WFSCollider-v2.2.4](/pdf/Working-with-WFSCollider-v2.2.4.pdf "pdf manual")
 
 **Some general tips when first starting:**
 
