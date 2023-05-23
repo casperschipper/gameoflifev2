@@ -4,7 +4,7 @@
         <title>/concerts</title>
         <link>The Game Of Life Foundation: Wave Field Synthesis/concerts</link>
         <description>The Game of Life Foundation: home of the first mobile Wave Field Synthesis System</description>
-        <lastBuildDate>Fri, 10 Feb 2023 21:43:05 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 May 2023 08:51:37 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -105,6 +105,49 @@ for horn, trumpet, tuba and electronics
 
 Ji Youn Kang – new composition (2023)
 for th...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[HKU Student Concert]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-04-21-HKU-WFS-Concert</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-04-21-HKU-WFS-Concert</guid>
+            <pubDate>Fri, 21 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[HKU Students Present: WaveFieldSynthesis Concert
+Friday 21 April 2023 / 16:00
+Ina Boudier-Bakkerlaan 50 Utrecht
+
+HKU Music Technology students present:
+WaveFieldSynthesis Concert
+
+ARDERMAR, Iver Kim and others...
+
+Friday 21-04-2023 16:00 - 17:20
+HKU IBB-Laan Room 1.34
+Ina Boudier-Bakkerlaan 50
+
+Free entrance
+Limited seats available
+
+About WFS:
+
+Wave Field Synthesis (WFS) is a sound production technology designed specifically for spatial audio rendering. Virtual acoustic environments are simulate...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Sonology Festival 2023 !]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-06-02-Sonology-festival</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-06-02-Sonology-festival</guid>
+            <pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Date & Time:
+2nd of June 17:00 & 19:30
+3rd of June 13:00 & 15:00
+
+Location:
+New Music Lab, Institute for Sonology, Amare (Spuiplein 150, Den Haag)
+
+Sonology Students of Ji Youn Kang present new works for the WFS System.
+
+[
+flyer
+](/img/wfs_festival23.png)...]]></description>
         </item>
     </channel>
 </rss>

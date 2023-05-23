@@ -1,5 +1,5 @@
 ---
-title: "HKU Student Concert"
+title: "Sonology Festival 2023 !"
 thumb: "/img/wfs_festival23.png"
 tags: concert
 ---
@@ -12,3 +12,7 @@ __Location:__
 New Music Lab, Institute for Sonology, Amare (Spuiplein 150, Den Haag)
 
 Sonology Students of Ji Youn Kang present new works for the WFS System.
+
+[
+![flyer](/img/wfs_festival23.png)
+](/img/wfs_festival23.png)

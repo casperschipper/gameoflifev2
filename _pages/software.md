@@ -11,7 +11,7 @@ It can be seen as a DAW for WFS Synthesis composition. Its features include:
 * 1-click to add real-time control over any parameter through OSC/Midi.
 * Open source and scripting/coding friendly: for example in place code modification of many parts of the system.
 
-By default it starts in a preview mode, which allows you to preview your WFS piece in stereo, which you can than later import into the system.
+By default it starts in a preview mode, which allows you to preview your WFS piece in stereo, which you can than later import into the system. It also supports a multichannel preview.
 
 ## Installing WFS Software
 

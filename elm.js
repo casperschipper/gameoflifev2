@@ -5530,7 +5530,7 @@ var $author$project$Page$header = _List_fromArray(
 						_List_fromArray(
 							[
 								$elm$html$Html$Attributes$alt('The Game Of Life Logo'),
-								$elm$html$Html$Attributes$src('/img/gameoflife_vector_logo.svg'),
+								$elm$html$Html$Attributes$src('/img/gameoflife_vector_logo_real.svg'),
 								A2($elm$html$Html$Attributes$attribute, 'width', '500')
 							]),
 						_List_Nil)
