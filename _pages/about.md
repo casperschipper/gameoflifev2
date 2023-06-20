@@ -69,6 +69,7 @@ In the meantime, there has been much interest from composers, programmers and ot
 The Game of Life foundation currently consists of:
 
 - [Casper Schipper](https://www.casperschipper.nl)
-- [Erwin Roebroeks](https://www.linkedin.com/in/erwinroebroeks/?originalSubdomain=nl)
+<!-- - [Erwin Roebroeks](https://www.linkedin.com/in/erwinroebroeks/?originalSubdomain=nl) -->
 - [Ji Youn Kang](http://www.jiyounkang.com/)
 - [Wouter Snoei](https://www.woutersnoei.nl)
+

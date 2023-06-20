@@ -11,7 +11,7 @@ __Date & Time:__
 __Location:__
 New Music Lab, Institute for Sonology, Amare (Spuiplein 150, Den Haag)
 
-Sonology Students of Ji Youn Kang present new works for the WFS System.
+Sonology students of Ji Youn Kang present new works for the WFS System.
 
 [
 ![flyer](/img/wfs_festival23.png)
