@@ -4,7 +4,9 @@ thumb: "/img/kbf_logo.png"
 tags: news
 ---
 
-We have just received the wonderful news that Konrad Boehmer Foundation will support us financially with maintenance and modernisation of our WFS system. Apart from repairing humming amplifiers, fixing broken subwoofers and replacing worn cables, we will move audio transfer to use Dante protocol, which will make the system more stable and even quicker to setup. Moving to Dante will also remove the need to run our software on multiple computers, which will reduce latency and should open a whole new area of experiments and musical possibility to explore.
+We have received fantastic news that the Konrad Boehmer Foundation will be providing us with financial support. This will enable us to carry out maintenance and modernization on our WFS system. In addition to repairing humming amplifiers, fixing broken subwoofers, and replacing worn cables, we will be upgrading our audio connections to utilize the Dante protocol. This upgrade will lead to a more stable and simplified setup. 
+
+This transformation will allow us to operate the entire system from a single computer, eliminating the need for the current two-computer setup that necessitates intricate synchronization. Utilizing a single computer will result in reduced latency and is poised to open up new avenues for     acoustic and musical experiments involving live input and control.
 
 Of course, we thank the Konrad Boehmer Foundation for their support!
 
