@@ -15,9 +15,18 @@
         "language": "en",
         "generator": "Elmstatic",
         "author": {
-          "name": "Casper Schipper and Others",
-          "link": "https://www.gameoflife.nl/about"
+            "name": "Casper Schipper and Others",
+            "link": "https://www.gameoflife.nl/about"
         }
     },
-    "tags": ["concert","other","sonology","workshop","wfs","news"]
+    "tags": [
+        "concert",
+        "concerts",
+        "musikfabrik",
+        "other",
+        "sonology",
+        "workshop",
+        "wfs",
+        "news"
+    ]
 }

@@ -4,7 +4,7 @@
         <title>/concerts</title>
         <link>The Game Of Life Foundation: Wave Field Synthesis/concerts</link>
         <description>The Game of Life Foundation: home of the first mobile Wave Field Synthesis System</description>
-        <lastBuildDate>Tue, 07 Nov 2023 08:23:10 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Nov 2023 11:51:31 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -132,22 +132,28 @@ About WFS:
 Wave Field Synthesis (WFS) is a sound production technology designed specifically for spatial audio rendering. Virtual acoustic environments are simulate...]]></description>
         </item>
         <item>
-            <title><![CDATA[Sonology Festival 2023 !]]></title>
-            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-06-02-Sonology-festival</link>
-            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-06-02-Sonology-festival</guid>
-            <pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Date & Time:
-2nd of June 17:00 & 19:30
-3rd of June 13:00 & 15:00
+            <title><![CDATA[Wavespace - Musikfabrik Köln]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-11-07-Sonology-festival</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-11-07-Sonology-festival</guid>
+            <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[We have the pleasure to announce no less than three concerts in collaboration with Musikfabrik Köln:
 
-Location:
-New Music Lab, Institute for Sonology, Amare (Spuiplein 150, Den Haag)
+Musikfabrik Köln
 
-Sonology students of Ji Youn Kang present new works for the WFS System.
+foto by Erwin Roebroeks
 
-[
-flyer
-](/img/wfs_festival23.png)...]]></description>
+"Madrigale"
+
+Sunday, 26th of November 2023
+start: 19:00
+
+Adrian Mocanu – il canto della foresta (2023) world premiere
+for trumpet and electronics
+
+Luigi Nono – La lontananza nostalgica utopica futura Madrigal for several “caminantes” by Gidon Kremer (1988)
+for violin solo and 8 magnetic tapes
+
+Claudio Monteverdi – Ohime dov’è il mio ben (1619) for baroq...]]></description>
         </item>
     </channel>
 </rss>
