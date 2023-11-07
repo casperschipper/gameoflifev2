@@ -3,16 +3,17 @@ title: "Wavespace - Musikfabrik Köln"
 thumb: "/img/musikfabrik_publiek.jpg"
 tags: 
 ---
+<figure class="concert-header">
+    <img src="/img/musikfabrik_publiek.jpg" alt="A full audience enjoying the previous WFS concert in ">
+    <figcaption class="figcaption">© Erwin Roebroeks</figcaption>
+</figure>
 
-We have the pleasure to announce no less than three concerts in collaboration with Musikfabrik Köln:
-
-![Musikfabrik Köln](/img/musikfabrik_publiek.jpg)
-
-*foto by Erwin Roebroeks*
+We have the pleasure to announce no less than three (!) concerts in collaboration with [Musikfabrik](https://www.musikfabrik.eu/en/) Köln:
 
 # "Madrigale"
 
 __Sunday, 26th of November 2023__
+__Location: [Cologne, Studio des Ensemble Musikfabrik](https://maps.app.goo.gl/68we7jdiuF1xK8EUA)__
 __start: 19:00__
  
 [Adrian Mocanu](https://adrian-mocanu.wixsite.com/home/works) – _il canto della foresta (2023)_ world premiere
@@ -29,6 +30,7 @@ Sara Cubarsi, violin, baroque violin
 # "Poemes"
 
 __Sunday, 26th of November 2023__
+__Location: [Cologne, Studio des Ensemble Musikfabrik](https://maps.app.goo.gl/68we7jdiuF1xK8EUA)__
 __start: 21:00__
 
 Iannis Xenakis – _Polytope de Cluny (1972)_
@@ -39,8 +41,9 @@ Adaptation for Wave Field Synthesis
 
 # "Enfolding Plane"
 
-27th of November, 2023
-Start 20:00 
+__Monday 27th of November, 2023__
+__Location: [Cologne, Studio des Ensemble Musikfabrik](https://maps.app.goo.gl/68we7jdiuF1xK8EUA)__
+__start 20:00__
 
 [Joanna Bailie](https://joannabailie.com/) – _Symphony-street-souvenir (2010/2014)_
 for ensemble and tape

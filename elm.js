@@ -7725,6 +7725,7 @@ var $rtfeldman$elm_css$Css$Global$h3 = $rtfeldman$elm_css$Css$Global$typeSelecto
 var $rtfeldman$elm_css$Css$Global$h4 = $rtfeldman$elm_css$Css$Global$typeSelector('h4');
 var $rtfeldman$elm_css$Css$Global$h5 = $rtfeldman$elm_css$Css$Global$typeSelector('h5');
 var $rtfeldman$elm_css$Css$Global$h6 = $rtfeldman$elm_css$Css$Global$typeSelector('h6');
+var $rtfeldman$elm_css$Css$height = $rtfeldman$elm_css$Css$prop1('height');
 var $rtfeldman$elm_css$Css$withPrecedingHash = function (str) {
 	return A2($elm$core$String$startsWith, '#', str) ? str : A2($elm$core$String$cons, '#', str);
 };
@@ -8760,6 +8761,10 @@ var $rtfeldman$elm_css$VirtualDom$Styled$toUnstyled = function (vdom) {
 };
 var $rtfeldman$elm_css$Html$Styled$toUnstyled = $rtfeldman$elm_css$VirtualDom$Styled$toUnstyled;
 var $rtfeldman$elm_css$Css$Global$ul = $rtfeldman$elm_css$Css$Global$typeSelector('ul');
+var $rtfeldman$elm_css$Css$initial = {bZ: 0, b0: 0, aR: 0, b1: 0, ar: 0, b2: 0, as: 0, O: 0, t: 0, a4: 0, av: 0, a: 0, h: 0, ay: 0, bB: 0, aT: 0, bc: 0, ad: 0, r: 0, az: 0, e: 0, T: 0, bf: 0, cu: 0, bG: 0, aU: 0, aC: 0, U: 0, aD: 0, aE: 0, ag: 0, ah: 0, K: 0, bh: 0, c: 0, b: 0, bJ: 0, aW: 0, W: 0, bj: 0, aG: 0, D: 0, bp: 0, aK: 0, an: 0, aL: 0, aM: 0, ao: 0, y: 0, aN: '', a0: 0, bT: 'initial', a1: 0, _: 0};
+var $rtfeldman$elm_css$Css$unset = _Utils_update(
+	$rtfeldman$elm_css$Css$initial,
+	{bT: 'unset'});
 var $rtfeldman$elm_css$Css$verticalAlign = function (fn) {
 	return A3(
 		$rtfeldman$elm_css$Css$Internal$getOverloadedProperty,
@@ -9137,6 +9142,34 @@ var $author$project$Styles$styles = function () {
 											$rtfeldman$elm_css$Css$maxHeight(
 											$rtfeldman$elm_css$Css$px(300)),
 											A2($rtfeldman$elm_css$Css$property, 'object-fit', 'fit')
+										]))
+								]))
+						])),
+					A2(
+					$rtfeldman$elm_css$Css$Global$class,
+					'figcaption',
+					_List_fromArray(
+						[
+							$rtfeldman$elm_css$Css$fontSize(
+							$rtfeldman$elm_css$Css$px(12.0))
+						])),
+					A2(
+					$rtfeldman$elm_css$Css$Global$class,
+					'concert-header',
+					_List_fromArray(
+						[
+							$rtfeldman$elm_css$Css$Global$descendants(
+							_List_fromArray(
+								[
+									$rtfeldman$elm_css$Css$Global$img(
+									_List_fromArray(
+										[
+											$rtfeldman$elm_css$Css$maxWidth($rtfeldman$elm_css$Css$unset),
+											$rtfeldman$elm_css$Css$width(
+											$rtfeldman$elm_css$Css$pct(130)),
+											$rtfeldman$elm_css$Css$height(
+											$rtfeldman$elm_css$Css$px(250)),
+											A2($rtfeldman$elm_css$Css$property, 'object-fit', 'cover')
 										]))
 								]))
 						]))

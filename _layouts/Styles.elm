@@ -57,6 +57,7 @@ styles =
             , textAlign center
             , backgroundColor <| hex "ffffff"
             , Css.maxWidth <| Css.pct 25
+
             --, wideScreen [ textAlign left, borderBottom3 (px 2) solid (hex "3c8765") ]
             ]
         , class "navigation"
@@ -132,6 +133,19 @@ styles =
                     [ Css.maxWidth <| px 300
                     , Css.maxHeight <| px 300
                     , Css.property "object-fit" "fit"
+                    ]
+                ]
+            ]
+        , class "figcaption"
+            [ Css.fontSize (Css.px 12.0)
+            ]
+        , class "concert-header"
+            [ descendants
+                [ img
+                    [ Css.maxWidth <| Css.unset
+                    , Css.width <| Css.pct 130
+                    , Css.height <| Css.px 250
+                    , Css.property "object-fit" "cover"
                     ]
                 ]
             ]

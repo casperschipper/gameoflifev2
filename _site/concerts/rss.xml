@@ -4,7 +4,7 @@
         <title>/concerts</title>
         <link>The Game Of Life Foundation: Wave Field Synthesis/concerts</link>
         <description>The Game of Life Foundation: home of the first mobile Wave Field Synthesis System</description>
-        <lastBuildDate>Tue, 07 Nov 2023 11:51:31 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Nov 2023 16:11:44 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -133,18 +133,19 @@ Wave Field Synthesis (WFS) is a sound production technology designed specificall
         </item>
         <item>
             <title><![CDATA[Wavespace - Musikfabrik Köln]]></title>
-            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-11-07-Sonology-festival</link>
-            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-11-07-Sonology-festival</guid>
-            <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[We have the pleasure to announce no less than three concerts in collaboration with Musikfabrik Köln:
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-11-26-Musikfabrik-November</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2023-11-26-Musikfabrik-November</guid>
+            <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[
 
-Musikfabrik Köln
+    © Erwin Roebroeks
 
-foto by Erwin Roebroeks
+We have the pleasure to announce no less than three (!) concerts in collaboration with Musikfabrik Köln:
 
 "Madrigale"
 
 Sunday, 26th of November 2023
+Location: Cologne, Studio des Ensemble Musikfabrik
 start: 19:00
 
 Adrian Mocanu – il canto della foresta (2023) world premiere
@@ -153,7 +154,7 @@ for trumpet and electronics
 Luigi Nono – La lontananza nostalgica utopica futura Madrigal for several “caminantes” by Gidon Kremer (1988)
 for violin solo and 8 magnetic tapes
 
-Claudio Monteverdi – Ohime dov’è il mio ben (1619) for baroq...]]></description>
+Claudio Monteverdi – Oh...]]></description>
         </item>
     </channel>
 </rss>
