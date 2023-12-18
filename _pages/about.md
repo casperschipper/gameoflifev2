@@ -2,8 +2,11 @@
 title: "WFS & The Game Of Life"
 ---
 
+[About Wave Field Synthesis](#about-wfs)<br>
 [Read about "The Game of Life Foundation"](#about-the-game-of-life-foundation)<br>
 [Who is The Game of Life?](#who-is-the-game-of-life)
+
+<a id="about-wfs"></a>
 
 About Wave Field Synthesis
 --------------------------
@@ -64,7 +67,7 @@ In the meantime, there has been much interest from composers, programmers and ot
 
 <a id="who-is-the-game-of-life"></a>
 
-# Who is the game of life ?
+# Who is The Game of Life ?
 
 The Game of Life foundation currently consists of:
 
@@ -72,4 +75,11 @@ The Game of Life foundation currently consists of:
 <!-- - [Erwin Roebroeks](https://www.linkedin.com/in/erwinroebroeks/?originalSubdomain=nl) -->
 - [Ji Youn Kang](http://www.jiyounkang.com/)
 - [Wouter Snoei](https://www.woutersnoei.nl)
+
+<figure class="portrait">
+<caption>Casper, Wouter & Ji in Musikfabrik Köln</caption>
+<a href="/img/wouter_casper_ji.jpeg" target="_blank"><img alt="portrait of wouter casper and ji" src="/img/wouter_casper_ji.jpeg"></a>
+</figure>
+
+
 

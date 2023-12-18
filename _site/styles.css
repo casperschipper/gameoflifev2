@@ -4,8 +4,8 @@
 
 body {
     height: 100vh;
-    width:100vw;
-    display: grid;           
+    width: 100vw;
+    display: grid;
     grid-gap: 20px 0;
     gap: 20px 40px;
     /* grid-template-columns: minmax(1fr, 100vw); */
@@ -55,4 +55,12 @@ body {
     grid-area: footer;
 }
 
+figure.portrait {
+    width: 100%;
+    max-width: 400px;
+}
 
+figure.portrait img {
+    width: 100%;
+    max-width: 400px;
+}
