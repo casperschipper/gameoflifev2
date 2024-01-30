@@ -43,7 +43,7 @@ files under the same link). Please note that WFSCollider can also run without sc
 Quarks are a package management system within Supercollider.
 
 5. Install the **WFSCollider-Class-Library** quark, by clicking the
-\[+\] next to it, you may have to refresh the list first to see it. (Installing the WFSCollider-Class-Library will also install the dependency-quarks: Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)
+\[+\] next to it, you may have to refresh the list first to see it. (Installing the WFSCollider-Class-Library will also install the dependency-quarks: Unit-Lib, wslib, NetLib, XML)
 
 	*Troubleshoot:* If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3
 <https://git-scm.com/downloads>. If you still don't see the quarks on Mac OS it can help to locate the SuperCollider folder in ~/Library/Application Support (menu File -> Open user support directory), delete the "downloaded-quarks folder" and then try again. Also note that there should be a working internet connection during the Quarks intallation.
