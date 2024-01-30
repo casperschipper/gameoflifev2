@@ -14,44 +14,47 @@ easier to run WFSCollider within a normal SuperCollider environment. There is a
 Supercollider ‘Quark’ for the WFS library, which makes this relatively easy.</p>
 <p>To run WFSCollider on any platform:</p>
 <ol>
-<li>Install supercollider: <a href="https://supercollider.github.io/">https://supercollider.github.io/</a>  </li>
-<li>Install sc3plugins: <a href="http://supercollider.github.io/sc3-plugins/">http://supercollider.github.io/sc3-plugins/</a><br>(this provides a .zip file, you can find instructions where to place the
-files under the same link)</li>
-<li><p>(Optional): if you do not have git installed, you will need to install this
-as well, since Git is required for installing Quarks within supercollider.</p>
-<p> You can find the installation instructions for git here:
+<li>Install <strong>SuperCollider</strong>: <a href="https://supercollider.github.io/">https://supercollider.github.io/</a>  </li>
+<li>Install <strong>sc3plugins</strong>: <a href="http://supercollider.github.io/sc3-plugins/">http://supercollider.github.io/sc3-plugins/</a><br>(this provides a .zip file, you can find instructions where to place the
+files under the same link). Please note that WFSCollider can also run without sc3plugins, but will be missing some features.</li>
+<li><p><em>Optional:</em> if you do not have <strong>git</strong> installed, you will need to install this
+as well, since Git is required for installing Quarks within supercollider. You can verify if git is installed on your machine by opening a window in Terminal and typing <code>which git</code> in it followed by enter. If it gives you a path to the git binary that means git is installed, otherwise it will say ‘git not found’. You can find the installation instructions for git here:
  <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p> <strong>Installing git in MacOS:</strong></p>
-<p> Apple does not provide git by default, and their xcode tools are an enourmous download, so by far the easiest way is to user a program called Homebrew:</p>
+<p> Apple does not provide git by default, and their xcode tools are an enormous download, so by far the easiest way to install git on macOS to use a program called Homebrew:</p>
 <ul>
 <li>Install homebrew, see <a href="https://brew.sh/">https://brew.sh/</a></li>
-<li>Install git:<pre><code class="lang-bash">      brew install git
-</code></pre>
-</li>
+<li>Install git (in Terminal):
+  <code>brew install git</code></li>
 </ul>
 </li>
 <li><p>Open Supercollider, open the menu <strong>Language</strong> &gt; <strong>Quarks</strong>. 
 (you can also write Quarks.gui; in an empty document and hit <em>shift+enter</em> to evaluate). 
 Quarks are a package management system within Supercollider.</p>
 </li>
-</ol>
-<p>Next, install the <strong>WFSCollider-Class-Library</strong> quark, by clicking the
-[+] next to it, you may have to refresh the list first to see it.</p>
-<p>(Installing the WFSCollider-Class-Library will also install the dependency-quarks:<br>Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)</p>
-<p>If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3
-<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p>4. Once the Quark is installed, click the “Recompile Class Library”
+<li><p>Install the <strong>WFSCollider-Class-Library</strong> quark, by clicking the
+[+] next to it, you may have to refresh the list first to see it. (Installing the WFSCollider-Class-Library will also install the dependency-quarks: Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)</p>
+<p> <em>Troubleshoot:</em> If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3
+<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>. If you still don’t see the quarks on Mac OS it can help to locate the SuperCollider folder in ~/Library/Application Support (menu File -&gt; Open user support directory), delete the “downloaded-quarks folder” and then try again. Also note that there should be a working internet connection during the Quarks intallation.</p>
+</li>
+<li><p>Once the Quark is installed, click the “Recompile Class Library”
 button.<br>Next, in the main supercollider window, type:</p>
-<p><code>WFS.startup;</code>  </p>
-<p>and hit SHIFT + ENTER keys to start.  </p>
+<p> <code>WFSLib.startup;</code>  </p>
+<p> and hit SHIFT + ENTER keys to start.  </p>
+</li>
+</ol>
 <p>It will take some time (a few minutes) to boot the very first time to
 generate some optimized code (panners). Subsequent boots will be much
-faster. On my own Windows test machine, I found it to work with my ASIO
+faster. </p>
+<p>If you use SuperCollider only for running WFSCollider it may be nice to have it starting up automatically. To do this, choose menu ‘File -&gt; Open startup file’, write the line “WFSLib.startup;” in that file and save. The next time you startup SuperCollider the WFSLib will be started up immediately.</p>
+<p><strong>Tips on Windows machines:</strong></p>
+<p>On Windows machines the performance may be sub-optimal. Generally it is advised to use a large hardwareBufferSize (1024 or more) and test various variants of your audio drivers (ASIO, MME, WDM etc.). These settings can be made in WFSCollider through the Preferences panel, found in the WFSCollider menu in a floating window after WFSLib has started up.</p>
+<p>On my own Windows test machine, I found it to work with my ASIO
 driver (using an RME Babyface interface), the default motherboard audio
 did not work, but that has been a source of trouble with other programs
 as well so it may be a quirk of that audio chip.  </p>
 <p><strong>The full manual:</strong></p>
 <p><a href="/pdf/Working-with-WFSCollider-v2.2.4.pdf" title="pdf manual">Working-with-WFSCollider-v2.2.4</a></p>
+<p>Please note that the current manual is quite old and doesn’t fully cover all possibilities of WFSCollider. Please feel free to experiment around and try things out that you don’t find in the manual.</p>
 <p><strong>Some general tips when first starting:</strong></p>
 <ul>
 <li>If you save your score in the same folder as the soundfiles, the paths will
