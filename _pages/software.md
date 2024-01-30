@@ -23,50 +23,50 @@ Supercollider ‘Quark’ for the WFS library, which makes this relatively easy.
 
 To run WFSCollider on any platform:
 
-1. Install supercollider: <https://supercollider.github.io/>  
-2. Install sc3plugins: <http://supercollider.github.io/sc3-plugins/>  
+1. Install **SuperCollider**: <https://supercollider.github.io/>  
+2. Install **sc3plugins**: <http://supercollider.github.io/sc3-plugins/>  
 (this provides a .zip file, you can find instructions where to place the
-files under the same link)
-3. (Optional): if you do not have git installed, you will need to install this
-   as well, since Git is required for installing Quarks within supercollider.
-
-    You can find the installation instructions for git here:
+files under the same link). Please note that WFSCollider can also run without sc3plugins, but will be missing some features.
+3. *Optional:* if you do not have **git** installed, you will need to install this
+   as well, since Git is required for installing Quarks within supercollider. You can verify if git is installed on your machine by opening a window in Terminal and typing ```which git``` in it followed by enter. If it gives you a path to the git binary that means git is installed, otherwise it will say 'git not found'. You can find the installation instructions for git here:
     <https://git-scm.com/downloads>
 
-    __Installing git in MacOS:__
-
-    Apple does not provide git by default, and their xcode tools are an enourmous download, so by far the easiest way is to user a program called Homebrew:
+    Apple does not provide git by default, and their xcode tools are an enormous download, so by far the easiest way to install git on macOS to use a program called Homebrew:
 
     - Install homebrew, see <https://brew.sh/>
-    - Install git:
-        ```bash
-            brew install git
+    - Install git (in Terminal):
+        ```brew install git
         ```
 
 4. Open Supercollider, open the menu __Language__ > __Quarks__. 
 (you can also write Quarks.gui; in an empty document and hit _shift+enter_ to evaluate). 
 Quarks are a package management system within Supercollider.
 
-Next, install the **WFSCollider-Class-Library** quark, by clicking the
-\[+\] next to it, you may have to refresh the list first to see it.
-  
-(Installing the WFSCollider-Class-Library will also install the dependency-quarks:  
-Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)
+5. Install the **WFSCollider-Class-Library** quark, by clicking the
+\[+\] next to it, you may have to refresh the list first to see it. (Installing the WFSCollider-Class-Library will also install the dependency-quarks: Xml, NetLib, PopupTreeMenu, Unit-Lib, VectorSpace, Xml, wslib, Mathlib)
 
-If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3
-<https://git-scm.com/downloads>
+	*Troubleshoot:* If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3
+<https://git-scm.com/downloads>. If you still don't see the quarks on Mac OS it can help to locate the SuperCollider folder in ~/Library/Application Support (menu File -> Open user support directory), delete the "downloaded-quarks folder" and then try again. Also note that there should be a working internet connection during the Quarks intallation.
 
-4\. Once the Quark is installed, click the “Recompile Class Library”
+6. Once the Quark is installed, click the “Recompile Class Library”
 button.  
 Next, in the main supercollider window, type:
 
-`WFS.startup;`  
+	`WFSLib.startup;`  
   
-and hit SHIFT + ENTER keys to start.  
+	and hit SHIFT + ENTER keys to start.  
   
 It will take some time (a few minutes) to boot the very first time to
 generate some optimized code (panners). Subsequent boots will be much
-faster. On my own Windows test machine, I found it to work with my ASIO
+faster. 
+
+If you use SuperCollider only for running WFSCollider it may be nice to have it starting up automatically. To do this, choose menu 'File -> Open startup file', write the line "WFSLib.startup;" in that file and save. The next time you startup SuperCollider the WFSLib will be started up immediately.
+
+**Tips on Windows machines:**
+
+On Windows machines the performance may be sub-optimal. Generally it is advised to use a large hardwareBufferSize (1024 or more) and test various variants of your audio drivers (ASIO, MME, WDM etc.). These settings can be made in WFSCollider through the Preferences panel, found in the WFSCollider menu in a floating window after WFSLib has started up.
+ 
+On my own Windows test machine, I found it to work with my ASIO
 driver (using an RME Babyface interface), the default motherboard audio
 did not work, but that has been a source of trouble with other programs
 as well so it may be a quirk of that audio chip.  
@@ -74,6 +74,8 @@ as well so it may be a quirk of that audio chip.
 **The full manual:**
 
 [Working-with-WFSCollider-v2.2.4](/pdf/Working-with-WFSCollider-v2.2.4.pdf "pdf manual")
+
+Please note that the current manual is quite old and doesn't fully cover all possibilities of WFSCollider. Please feel free to experiment around and try things out that you don't find in the manual.
 
 **Some general tips when first starting:**
 
