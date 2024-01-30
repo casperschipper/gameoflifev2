@@ -24,9 +24,11 @@ Supercollider ‘Quark’ for the WFS library, which makes this relatively easy.
 To run WFSCollider on any platform:
 
 1. Install **SuperCollider**: <https://supercollider.github.io/>  
+
 2. Install **sc3plugins**: <http://supercollider.github.io/sc3-plugins/>  
 (this provides a .zip file, you can find instructions where to place the
 files under the same link). Please note that WFSCollider can also run without sc3plugins, but will be missing some features.
+
 3. *Optional:* if you do not have **git** installed, you will need to install this
    as well, since Git is required for installing Quarks within supercollider. You can verify if git is installed on your machine by opening a window in Terminal and typing ```which git``` in it followed by enter. If it gives you a path to the git binary that means git is installed, otherwise it will say 'git not found'. You can find the installation instructions for git here:
     <https://git-scm.com/downloads>
@@ -35,9 +37,8 @@ files under the same link). Please note that WFSCollider can also run without sc
 
     - Install homebrew, see <https://brew.sh/>
     - Install git (in Terminal):
-        ```brew install git
-        ```
-
+        ```brew install git```
+        
 4. Open Supercollider, open the menu __Language__ > __Quarks__. 
 (you can also write Quarks.gui; in an empty document and hit _shift+enter_ to evaluate). 
 Quarks are a package management system within Supercollider.
