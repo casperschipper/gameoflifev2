@@ -51,7 +51,7 @@ To run WFSCollider on any platform:
         
 4. *Optional:* Install **sc3plugins**: <http://supercollider.github.io/sc3-plugins/>  
 This provides a .zip file, you can find instructions where to place the
-files under the same link. WFSCollider can run without sc3plugins, but will be missing some minor features; in particular the *mda_piano*, *magSmooth* and *moogVCF* Udefs will be missing
+files under the same link. WFSCollider can run without sc3plugins, but will be missing some minor features; in particular the *mda_piano*, *magSmooth* and *moogVCF* Udefs will be missing. You can also add sc3plugins later when needed.
 
 5. Once the Quark is installed, click the “Recompile Class Library”
 button or choose __Language__ > __Recompile Class Library__ from the menu bar.
