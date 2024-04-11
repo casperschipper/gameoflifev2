@@ -25,11 +25,20 @@ To run WFSCollider on any platform:
 
 1. Install **SuperCollider**: <https://supercollider.github.io/>  
 
-2. Install **sc3plugins**: <http://supercollider.github.io/sc3-plugins/>  
-This provides a .zip file, you can find instructions where to place the
-files under the same link.
+2. Install the **WFSCollider-Class-Library** Quark. Quarks are a package management system within Supercollider. There are two ways to do this:
 
- *Note:* WFSCollider can also run without sc3plugins, but will be missing some features.
+ * Via menu: Open Supercollider, open the menu __Language__ > __Quarks__. Locate the 
+ *WFSCollider-Class-Library* quark in the list and install by clicking the
+\[+\] next to it. You may have to refresh the list first to see it. 
+
+ * Via code; Open an empty window in SuperCollider (__File__ > __New__). In this window, type:
+ 
+      `Quarks.install( "WFSCollider-Class-Library" );` 
+       and then press SHIFT + ENTER to evaluate.
+
+ Installing the WFSCollider-Class-Library will also install the dependency-quarks: Unit-Lib, wslib, NetLib, XML
+ 
+  *Troubleshoot:* If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3 (installing git), restart SuperCollider and try again. If you still don't see the quarks on Mac OS it can help to locate the SuperCollider folder in ~/Library/Application Support (menu File -> Open user support directory), delete the "downloaded-quarks folder" and then try again. Also note that there should be a working internet connection during the Quarks intallation. 
 
 3. *Optional:* if you do not have **git** installed, you will need to install this
    as well, since Git is required for installing Quarks within supercollider. You can verify if git is installed on your machine by opening a window in Terminal and typing ```which git``` in it followed by enter. If it gives you a path to the git binary that means git is installed, otherwise it will say 'git not found'. You can find the installation instructions for git here:
@@ -40,18 +49,9 @@ files under the same link.
     - Install homebrew, see <https://brew.sh/>
     - Install git (in Terminal): `brew install git`
         
-4. Install the **WFSCollider-Class-Library** Quark. Quarks are a package management system within Supercollider. There are two ways to do this:
-
- * Via menu: Open Supercollider, open the menu __Language__ > __Quarks__. Locate the 
- *WFSCollider-Class-Library* quark in the list and install by clicking the
-\[+\] next to it. You may have to refresh the list first to see it. 
-
- * Via code; Open an empty window in SuperCollider (__File__ > __New__). In this window, type:
- `Quarks.install( "WFSCollider-Class-Library" );` and then press SHIFT + ENTER to evaluate.
-
- Installing the WFSCollider-Class-Library will also install the dependency-quarks: Unit-Lib, wslib, NetLib, XML
-
- *Troubleshoot:* If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3 (installing git). If you still don't see the quarks on Mac OS it can help to locate the SuperCollider folder in ~/Library/Application Support (menu File -> Open user support directory), delete the "downloaded-quarks folder" and then try again. Also note that there should be a working internet connection during the Quarks intallation.
+4. *Optional:* Install **sc3plugins**: <http://supercollider.github.io/sc3-plugins/>  
+This provides a .zip file, you can find instructions where to place the
+files under the same link. WFSCollider can run without sc3plugins, but will be missing some minor features; in particular the *mda_piano*, *magSmooth* and *moogVCF* Udefs will be missing
 
 5. Once the Quark is installed, click the “Recompile Class Library”
 button or choose __Language__ > __Recompile Class Library__ from the menu bar.
@@ -62,11 +62,14 @@ button or choose __Language__ > __Recompile Class Library__ from the menu bar.
   
 	and hit SHIFT + ENTER keys to start.  
   
- It will take some time (a few minutes) to boot the very first time to
-generate some optimized code (panners). Subsequent boots will be much
+ On Linux and Windows machines it will take some time (a few minutes) to boot the 
+ very first time to generate some optimized code (panners). Subsequent boots will be much
 faster. 
 
 If you use SuperCollider only for running WFSCollider it may be nice to have it starting up automatically. To do this, choose menu __File__ > __Open startup file__, write the line `WFSLib.startup;` in that file and save. The next time you startup SuperCollider the WFSLib will be started up immediately.
+
+For future versions there is a "Check for updates" menu item in the WFSCollider menu,
+please use this instead of the regular Quarks interface to ensure proper working.
 
 **Tips on Windows machines:**
 
