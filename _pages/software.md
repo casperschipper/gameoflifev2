@@ -112,3 +112,7 @@ will also want to use the Supernova version of the Supercollider server,
 since this provides the necessary accuracy on the server.
 
 You can reach us on casper@gameoflife.nl
+
+![screen shot 1](/img/wfs_screen_1.png)
+![screen shot 2](/img/wfs_screen_2.png)
+![screen shot 3](/img/wfs_screen_3.png)
