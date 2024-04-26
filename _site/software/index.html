@@ -1,4 +1,5 @@
 <!doctype html><html><head><title>Software | The Game Of Life Foundation: Wave Field Synthesis</title><meta charset="utf-8"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js"></script><script>hljs.initHighlightingOnLoad();</script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/styles/default.min.css" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Open+Sans|Proza+Libre|Inconsolata" rel="stylesheet" type="text/css"></head><body><div class="header-logo"><a href="/"><img alt="The Game Of Life Logo" src="/img/gameoflife_vector_logo_real.svg" width="500"></a></div><div class="navigation"><ul><li><a href="/posts">News</a></li><li><a href="/concerts">Concerts</a></li><li><a href="/media">Media</a></li><li><a href="/software">Software</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="content"><h1>Software</h1><div class="markdown"><p>For WFS content creation, the Game of Life developed our own software, called <strong>WFSCollider</strong>, which is <strong>free to download</strong>! ( <a href="https://github.com/GameOfLife">github</a> ). It runs on all mayor platforms (Windows, MacOS, Linux). </p>
+<p><img src="/img/wfs_screen_1.png" alt="screen shot 1"></p>
 <p>It can be seen as a DAW for WFS Synthesis composition. Its features include:</p>
 <ul>
 <li>Graphical timeline, trajectory and position interfaces.</li>
@@ -16,8 +17,19 @@ Supercollider ‘Quark’ for the WFS library, which makes this relatively easy.
 <ol>
 <li><p>Install <strong>SuperCollider</strong>: <a href="https://supercollider.github.io/">https://supercollider.github.io/</a>  </p>
 </li>
-<li><p>Install <strong>sc3plugins</strong>: <a href="http://supercollider.github.io/sc3-plugins/">http://supercollider.github.io/sc3-plugins/</a><br>(this provides a .zip file, you can find instructions where to place the
-files under the same link). Please note that WFSCollider can also run without sc3plugins, but will be missing some features.</p>
+<li><p>Install the <strong>WFSCollider-Class-Library</strong> Quark. Quarks are a package management system within Supercollider. There are two ways to do this:</p>
+<ul>
+<li><p>Via menu: Open Supercollider, open the menu <strong>Language</strong> &gt; <strong>Quarks</strong>. Locate the 
+<em>WFSCollider-Class-Library</em> quark in the list and install by clicking the
+[+] next to it. You may have to refresh the list first to see it. </p>
+</li>
+<li><p>Via code; Open an empty window in SuperCollider (<strong>File</strong> &gt; <strong>New</strong>). In this window, type:</p>
+<p> <code>Quarks.install( "WFSCollider-Class-Library" );</code> 
+  and then press SHIFT + ENTER to evaluate.</p>
+</li>
+</ul>
+<p>Installing the WFSCollider-Class-Library will also install the dependency-quarks: Unit-Lib, wslib, NetLib, XML</p>
+<p><em>Troubleshoot:</em> If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3 (installing git), restart SuperCollider and try again. If you still don’t see the quarks on Mac OS it can help to locate the SuperCollider folder in ~/Library/Application Support (menu File -&gt; Open user support directory), delete the “downloaded-quarks folder” and then try again. Also note that there should be a working internet connection during the Quarks intallation. </p>
 </li>
 <li><p><em>Optional:</em> if you do not have <strong>git</strong> installed, you will need to install this
 as well, since Git is required for installing Quarks within supercollider. You can verify if git is installed on your machine by opening a window in Terminal and typing <code>which git</code> in it followed by enter. If it gives you a path to the git binary that means git is installed, otherwise it will say ‘git not found’. You can find the installation instructions for git here:
@@ -25,29 +37,26 @@ as well, since Git is required for installing Quarks within supercollider. You c
 <p> Apple does not provide git by default, and their xcode tools are an enormous download, so by far the easiest way to install git on macOS to use a program called Homebrew:</p>
 <ul>
 <li>Install homebrew, see <a href="https://brew.sh/">https://brew.sh/</a></li>
-<li>Install git (in Terminal):
-  <code>brew install git</code></li>
+<li>Install git (in Terminal): <code>brew install git</code></li>
 </ul>
 </li>
-<li><p>Open Supercollider, open the menu <strong>Language</strong> &gt; <strong>Quarks</strong>. 
-(you can also write Quarks.gui; in an empty document and hit <em>shift+enter</em> to evaluate). 
-Quarks are a package management system within Supercollider.</p>
-</li>
-<li><p>Install the <strong>WFSCollider-Class-Library</strong> quark, by clicking the
-[+] next to it, you may have to refresh the list first to see it. (Installing the WFSCollider-Class-Library will also install the dependency-quarks: Unit-Lib, wslib, NetLib, XML)</p>
-<p> <em>Troubleshoot:</em> If you don’t see any quarks, but only an error on Windows and Mac OS, please check step 3
-<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>. If you still don’t see the quarks on Mac OS it can help to locate the SuperCollider folder in ~/Library/Application Support (menu File -&gt; Open user support directory), delete the “downloaded-quarks folder” and then try again. Also note that there should be a working internet connection during the Quarks intallation.</p>
+<li><p><em>Optional:</em> Install <strong>sc3plugins</strong>: <a href="http://supercollider.github.io/sc3-plugins/">http://supercollider.github.io/sc3-plugins/</a><br>This provides a .zip file, you can find instructions where to place the
+files under the same link. WFSCollider can run without sc3plugins, but will be missing some minor features; in particular the <em>mda_piano</em>, <em>magSmooth</em> and <em>moogVCF</em> Udefs will be missing. You can also add sc3plugins later when needed.</p>
 </li>
 <li><p>Once the Quark is installed, click the “Recompile Class Library”
-button.<br>Next, in the main supercollider window, type:</p>
+button or choose <strong>Language</strong> &gt; <strong>Recompile Class Library</strong> from the menu bar.</p>
+</li>
+<li><p>In the main SuperCollider window, type:</p>
 <p> <code>WFSLib.startup;</code>  </p>
 <p> and hit SHIFT + ENTER keys to start.  </p>
+<p>On Linux and Windows machines it will take some time (a few minutes) to boot the 
+very first time to generate some optimized code (panners). Subsequent boots will be much
+faster. </p>
 </li>
 </ol>
-<p>It will take some time (a few minutes) to boot the very first time to
-generate some optimized code (panners). Subsequent boots will be much
-faster. </p>
-<p>If you use SuperCollider only for running WFSCollider it may be nice to have it starting up automatically. To do this, choose menu ‘File -&gt; Open startup file’, write the line “WFSLib.startup;” in that file and save. The next time you startup SuperCollider the WFSLib will be started up immediately.</p>
+<p>If you use SuperCollider only for running WFSCollider it may be nice to have it starting up automatically. To do this, choose menu <strong>File</strong> &gt; <strong>Open startup file</strong>, write the line <code>WFSLib.startup;</code> in that file and save. The next time you startup SuperCollider the WFSLib will be started up immediately.</p>
+<p>For future versions there is a “Check for updates” menu item in the WFSCollider menu,
+please use this instead of the regular Quarks interface to ensure proper working.</p>
 <p><strong>Tips on Windows machines:</strong></p>
 <p>On Windows machines the performance may be sub-optimal. Generally it is advised to use a large hardwareBufferSize (1024 or more) and test various variants of your audio drivers (ASIO, MME, WDM etc.). These settings can be made in WFSCollider through the Preferences panel, found in the WFSCollider menu in a floating window after WFSLib has started up.</p>
 <p>On my own Windows test machine, I found it to work with my ASIO
@@ -82,6 +91,8 @@ synchronize your computer clocks (PTP is not available for Mac OS). You
 will also want to use the Supernova version of the Supercollider server,
 since this provides the necessary accuracy on the server.</p>
 <p>You can reach us on casper@gameoflife.nl</p>
+<p><img src="/img/wfs_screen_2.png" alt="screen shot 2">
+<img src="/img/wfs_screen_3.png" alt="screen shot 3"></p>
 </div></div><link href="/styles.css" rel="stylesheet" type="text/css"><style>body {
     padding:0px;
     margin-left:auto;

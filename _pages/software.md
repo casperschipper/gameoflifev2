@@ -4,6 +4,8 @@ title: "Software"
 
 For WFS content creation, the Game of Life developed our own software, called __WFSCollider__, which is __free to download__! ( [github](https://github.com/GameOfLife) ). It runs on all mayor platforms (Windows, MacOS, Linux). 
 
+![screen shot 1](/img/wfs_screen_1.png)
+
 It can be seen as a DAW for WFS Synthesis composition. Its features include:
 
 * Graphical timeline, trajectory and position interfaces.
@@ -113,6 +115,5 @@ since this provides the necessary accuracy on the server.
 
 You can reach us on casper@gameoflife.nl
 
-![screen shot 1](/img/wfs_screen_1.png)
 ![screen shot 2](/img/wfs_screen_2.png)
 ![screen shot 3](/img/wfs_screen_3.png)

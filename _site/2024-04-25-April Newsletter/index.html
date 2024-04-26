@@ -1,0 +1,218 @@
+<!doctype html><html><head><title>April Newsletter | The Game Of Life Foundation: Wave Field Synthesis</title><meta charset="utf-8"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js"></script><script>hljs.initHighlightingOnLoad();</script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/styles/default.min.css" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Open+Sans|Proza+Libre|Inconsolata" rel="stylesheet" type="text/css"></head><body><div class="header-logo"><a href="/"><img alt="The Game Of Life Logo" src="/img/gameoflife_vector_logo_real.svg" width="500"></a></div><div class="navigation"><ul><li><a href="/posts">News</a></li><li><a href="/concerts">Concerts</a></li><li><a href="/media">Media</a></li><li><a href="/software">Software</a></li><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li></ul></div><div class="content"><h1>April Newsletter</h1><div class="media-gallery"><div class="post-metadata"><span>2024-04-25</span><span></span><a href="/tags/news">news</a><a href="/tags/newsletter">newsletter</a></div><div class="markdown"><h2 id="wfs-festival-2024">WFS Festival 2024</h2>
+<p></p><p style="font-size:1.25em"><strong>Save the date:</strong></p>
+<strong>Friday May 31st and Saturday June 1st in the New Music Lab, Amare, The Hague.</strong><p></p>
+<p>The WFS festival (organized in collaboration with the <a href="https://sonology.org">Institute of Sonology</a> at the Royal Conservatoire in The Hague). There is going to be a full program with newly composed pieces in four concerts. We will announce further details soon.</p>
+<h2 id="update-about-the-upgrade">Update about the upgrade</h2>
+<p>The system has just finished the first part of the renovation made possible with the financial support of the <a href="https://www.kboehmer.nl/">Konrad Boehmer Foundation</a>. The 18-years old audio infrastructure has been replaced by <a href="https://en.wikipedia.org/wiki/Dante_(networking">Dante</a>) and the system runs from a new single computer now. For using the system, the modernisation means the following practical benefits:</p>
+<ul>
+<li>Easy to route in external audio, for example, you can connect to any laptop through ethernet and Dante Virtual Soundcard, which provides 64 channels of input. Or a digital mixer with Dante facilities. Of course, analog or digital input through ADAT also remains possible and is no longer limited to 16 channels.</li>
+<li>Reduced latency for live use, below 5ms if necessary.</li>
+<li>Around three times more cpu power means up to ca. 250 simultaneous moving sources are possible.</li>
+<li>Easier to share audio signals within a WFS score (e.g. modeling acoustic spaces or more other spatial transformation distributed over multiple sound sources)</li>
+<li>It is no longer necessary to copy files to multiple computers. Everything is running from one machine.</li>
+<li>Easier setup and fast (re)boot; the system can be up and running literally within a minute. </li>
+<li>In general the system appears to have a better sound quality now, due to modern parts.</li>
+</ul>
+<p>The next steps will be repairing some of the wiring, revising the amplifiers and improving the subwoofer connections.
+WFS Software updates
+In anticipation of the upgrade, Wouter has been very busy modernizing WFSCollider. There are too many changes to list them all here. We think now the WFSCollider is a lot more user friendly. Note that WFSCollider can also be useful outside the WFS context with various loudspeaker configurations. Be sure to try it! Here are some of the key features:</p>
+<ul>
+<li>Modernized GUI with various skins, more visual feedback of parameters and menus.</li>
+<li>You can now select automation and units (UMaps &amp; Udefs) directly by clicking on any parameter, resulting in a more streamlined workflow.</li>
+<li>If you select multiple events, you can do a “mass array” edit on any parameter.</li>
+<li>Integrated documentation when you hover any part of the GUI</li>
+<li>Simplified server setup</li>
+<li>A function to centrally define an array of values as Environment variables (think of custom musical scales, series or even dynamic tables that can be used throughout your score).</li>
+<li>Improved array editing with generative options, available for (almost) all types of parameters.</li>
+<li>Code transparency; more direct coding options from within the graphical environment</li>
+<li>Many tiny tweaks that make things generally easier.</li>
+<li>Cross-platform support; WFSCollider runs correctly on macOS, Linux and Windows</li>
+</ul>
+<p>Installation: We have also updated the software installation instructions and it is now easier to install.
+<a href="https://gameoflife.nl/software/">https://gameoflife.nl/software/</a></p>
+<p>Update: Once you have the latest version, you can easily stay up to date by selecting “Check for updates…” in the “WFSCollider” menu. Then the update will be done by a single click on the pop up menu.</p>
+</div></div></div><link href="/styles.css" rel="stylesheet" type="text/css"><style>body {
+    padding:0px;
+    margin-left:auto;
+    margin-right:auto;
+    width:80vw;
+    background-color:#ffffff;
+    color:#000000;
+    font-family:sans-serif, Arial, sans-serif;
+    font-size:18px;
+    line-height:1.4em;
+    font-weight:lighter;
+}
+
+a {
+    color:#888888;
+    text-decoration:none;
+}
+
+code {
+    font-family:Inconsolata, monospace;
+}
+
+pre  code {
+    overflow-x:scroll !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:sans-serif, Helvetica, sans-serif;
+    line-height:1.1em;
+}
+
+h1 {
+    font-size:2.66667em;
+    margin-bottom:2.0202rem;
+}
+
+h2 {
+    font-size:2em;
+    margin-bottom:1.61616rem;
+}
+
+h3 {
+    font-size:1.33333em;
+    margin-bottom:1.21212rem;
+}
+
+h4 {
+    font-size:1.2em;
+    margin-bottom:0.80808rem;
+}
+
+h5, h6 {
+    font-size:1em;
+    margin-bottom:0.60606rem;
+}
+
+p {
+    margin:auto auto 1.5rem;
+}
+
+small {
+    font-size:65%;
+}
+
+.header-logo {
+    padding-top:6px;
+    text-align:center;
+    background-color:#ffffff;
+    max-width:25%;
+}
+
+.navigation {
+    text-align:center;
+    background-color:#ffffff;
+    padding:10px;
+    margin-top:-20px;
+}
+
+@media only screen and (min-width: 750px) {
+    .navigation {
+        margin-top:0px;
+    padding:0px;
+    text-align:right;
+    }
+}
+
+.navigation  ul {
+    margin:0px;
+    padding:0px;
+}
+
+@media only screen and (min-width: 750px) {
+    .navigation  ul {
+        line-height:100px;
+    }
+}
+
+.navigation  li {
+    display:inline-block;
+    margin-right:20px;
+}
+
+.content {
+    max-width:100vw;
+}
+
+.markdown {
+    max-width:800px;
+}
+
+.markdown  img {
+    max-width:50vw;
+}
+
+.footer {
+    text-align:center;
+    border-top:2px solid #2f4858;
+    background-color:#348aa7;
+    color:#ffffff;
+}
+
+@media only screen and (min-width: 750px) {
+    .footer {
+        line-height:80px;
+    text-align:right;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .footer  .link {
+        display:inline-block;
+    margin-right:20px;
+    }
+}
+
+.footer  a {
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.footer  svg {
+    padding-right:5px;
+    vertical-align:baseline;
+}
+
+.post-metadata {
+    margin-top:-1.5em;
+    margin-bottom:0.5em;
+}
+
+.post-metadata  a, .post-metadata  span {
+    display:inline-block;
+    margin-right:5px;
+}
+
+.post-metadata  a {
+    border:1px solid #e0e0e0;
+    border-radius:3px;
+    background-color:#fafafa;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.thumb {
+    max-width:300px;
+    max-height:300px;
+    object-fit:fit;
+}
+
+.media-gallery  img {
+    max-width:300px;
+    max-height:300px;
+    object-fit:fit;
+}
+
+.figcaption {
+    font-size:12px;
+}
+
+.concert-header  img {
+    max-width:unset;
+    width:130%;
+    height:250px;
+    object-fit:cover;
+}</style></body></html>
