@@ -4,7 +4,7 @@
         <title></title>
         <link>The Game Of Life Foundation: Wave Field Synthesis</link>
         <description>The Game of Life Foundation: home of the first mobile Wave Field Synthesis System</description>
-        <lastBuildDate>Fri, 26 Apr 2024 09:52:47 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 May 2024 07:29:25 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -53,6 +53,19 @@ The WFS festival (organized in collaboration with the Institute of Sonology at t
 Update about the upgrade
 
 The system has just finished the first part of the renovation made possible with the financial support of the Konrad Boehme...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[WFS Collider Update]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/2024-05-21-More Software Updates</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/2024-05-21-More Software Updates</guid>
+            <pubDate>Tue, 21 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[There have been some more updates to the software (including a rather rare but nasty QT bug workaround).
+
+If you already have a recent version (last month), you can upgrade through the WFS Collider menu.
+
+Otherwise, instructions to install are here.
+https://gameoflife.nl/software/
+...]]></description>
         </item>
         <item>
             <title><![CDATA[Sonology WFS Festival 2022]]></title>
@@ -195,6 +208,22 @@ Luigi Nono – La lontananza nostalgica utopica futura Madrigal for several “c
 for violin solo and 8 magnetic tapes
 
 Claudio Monteverdi – Oh...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[WFS Festival Poster]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2024-05-31-WFS festival 2024</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2024-05-31-WFS festival 2024</guid>
+            <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The poster of the WFS Festival 2024 has been released!
+
+    .poster { width : 100%; }
+
+    .poster img {
+        max-width : unset;
+        max-height: unset;
+    }
+
+Friday May 31st and Saturday June 1st in the New Music Lab, Amare, The Hague....]]></description>
         </item>
     </channel>
 </rss>

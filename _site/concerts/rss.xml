@@ -4,7 +4,7 @@
         <title>/concerts</title>
         <link>The Game Of Life Foundation: Wave Field Synthesis/concerts</link>
         <description>The Game of Life Foundation: home of the first mobile Wave Field Synthesis System</description>
-        <lastBuildDate>Fri, 26 Apr 2024 09:52:47 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 May 2024 07:29:25 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -155,6 +155,22 @@ Luigi Nono – La lontananza nostalgica utopica futura Madrigal for several “c
 for violin solo and 8 magnetic tapes
 
 Claudio Monteverdi – Oh...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[WFS Festival Poster]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2024-05-31-WFS festival 2024</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2024-05-31-WFS festival 2024</guid>
+            <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[The poster of the WFS Festival 2024 has been released!
+
+    .poster { width : 100%; }
+
+    .poster img {
+        max-width : unset;
+        max-height: unset;
+    }
+
+Friday May 31st and Saturday June 1st in the New Music Lab, Amare, The Hague....]]></description>
         </item>
     </channel>
 </rss>
