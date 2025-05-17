@@ -4,7 +4,7 @@
         <title>/concerts</title>
         <link>The Game Of Life Foundation: Wave Field Synthesis/concerts</link>
         <description>The Game of Life Foundation: home of the first mobile Wave Field Synthesis System</description>
-        <lastBuildDate>Tue, 21 May 2024 07:29:25 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 May 2025 09:15:19 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -171,6 +171,46 @@ Claudio Monteverdi – Oh...]]></description>
     }
 
 Friday May 31st and Saturday June 1st in the New Music Lab, Amare, The Hague....]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Safe the date]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2025-05-30-WFS Festival</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2025-05-30-WFS Festival</guid>
+            <pubDate>Fri, 30 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The poster of the WFS Festival 2024 has been released!
+
+    .poster { width : 100%; }
+
+    .poster img {
+        max-width : unset;
+        max-height: unset;
+    }
+
+The registration links can be found at the bottom of the page here:
+->>
+
+Friday May 31st and Saturday June 1st in the New Music Lab, Amare, The Hague....]]></description>
+        </item>
+        <item>
+            <title><![CDATA[WFS Festival Registration link]]></title>
+            <link>The Game Of Life Foundation: Wave Field Synthesis/concerts/2025-05-31-WFS Festival Registration</link>
+            <guid>The Game Of Life Foundation: Wave Field Synthesis/concerts/2025-05-31-WFS Festival Registration</guid>
+            <pubDate>Sat, 31 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[WFS Festival 2025
+
+Friday May 30st and Saturday May 31st in the New Music Lab, Amare, The Hague.
+
+    .poster { width : 100%; }
+
+    .poster img {
+        max-width : unset;
+        max-height: unset;
+    }
+
+The registration links can be found at the bottom of the page here:
+
+->>
+...]]></description>
         </item>
     </channel>
 </rss>
